@@ -375,65 +375,99 @@ $meta_keywords = 'furniture, wooden furniture, home furniture, sofas, beds, dini
                 </div>
             </div>
 
-            <!-- Premimum furnitures Section -->
-            <div class="shop-categories-section" id="products">
+            <!-- Shop What You Need Section -->
+            <div class="shop-what-you-need-section">
                 <div class="hero-container">
-                    <h2 class="section-title">Premium furniture offered in Davangere</h2>
-                    <p class="section-subtitle">Explore our curated collection of premium furniture for every room</p>
+                    <h2 class="section-title">Shop what you need to <span class="highlight-text">furnish well</span></h2>
                     
-                    <div class="category-filters" role="tablist" aria-label="Product categories">
-                        <?php foreach ($categories as $category): ?>
-                            <button
-                                class="filter-btn <?= $category === 'Living Room' ? 'active' : '' ?>"
-                                onclick="filterProducts('<?= $category ?>')"
-                                role="tab"
-                                aria-selected="<?= $category === 'Living Room' ? 'true' : 'false' ?>"
-                                aria-label="Filter by <?= $category ?>"
-                            >
-                                <?= $category ?>
-                            </button>
-                        <?php endforeach; ?>
-                    </div>
+                    <div class="shop-grid">
+                        <!-- Back Support Card -->
+                        <div class="shop-card">
+                            <div class="shop-card-content">
+                                <h3 class="shop-card-title">Back support</h3>
+                                <p class="shop-card-description">For the aches & pains that don't let you rest</p>
+                                <img src="https://ii1.pepperfry.com/media/catalog/product/c/a/1600x1760/canedo-velvet-chaise-lounger-in-beige-colour-by-casacraft-canedo-velvet-chaise-lounger-in-beige-colo-zqhuzh.jpg" alt="Ergonomic Chairs" loading="lazy">
+                                <a href="gallery.php?category=Home%20Office" class="shop-cta-btn">EXPLORE ALL</a>
+                            </div>
+                        </div>
 
-                    <!-- Products Grid -->
-                    <div class="products-grid" id="productsGrid">
-                        <?php foreach ($products as $product): ?>
-                            <a href="gallery.php?category=<?= urlencode($product['category']) ?>" class="product-card" data-category="<?= $product['category'] ?>" style="<?= $product['category'] !== 'Living Room' ? 'display: none;' : '' ?>">
-                                <div class="product-image">
-                                    <img src="<?= $product['image'] ?>" alt="<?= $product['name'] ?>" loading="lazy">
-                                    <?php if (isset($product['badge'])): ?>
-                                        <div class="product-badge"><?= $product['badge'] ?></div>
-                                    <?php endif; ?>
-                                </div>
-                                <div class="product-name"><?= $product['name'] ?></div>
-                                
-                                <!-- Product Tooltip -->
-                                <div class="product-tooltip">
-                                    <div class="tooltip-content">
-                                        <h4 class="tooltip-title"><?= $product['name'] ?></h4>
-                                        <p class="tooltip-category"><?= $product['category'] ?></p>
-                                        <p class="tooltip-description"><?= $product['description'] ?></p>
-                                        <?php if (isset($product['material'])): ?>
-                                            <p class="tooltip-detail"><strong>Material:</strong> <?= $product['material'] ?></p>
-                                        <?php endif; ?>
-                                        <?php if (isset($product['dimensions'])): ?>
-                                            <p class="tooltip-detail"><strong>Dimensions:</strong> <?= $product['dimensions'] ?></p>
-                                        <?php endif; ?>
-                                    </div>
-                                </div>
-                            </a>
-                        <?php endforeach; ?>
+                        <!-- Cozy & Snug Card -->
+                        <div class="shop-card">
+                            <div class="shop-card-content">
+                                <h3 class="shop-card-title">Cozy & snug</h3>
+                                <p class="shop-card-description">For that plush feel</p>
+                                <img src="https://ii1.pepperfry.com/media/catalog/product/c/a/1600x1760/canedo-velvet-chaise-lounger-in-beige-colour-by-casacraft-canedo-velvet-chaise-lounger-in-beige-colo-zqhuzh.jpg" alt="Comfortable Sofas" loading="lazy">
+                                <a href="gallery.php?category=Living%20Room" class="shop-cta-btn">EXPLORE ALL</a>
+                            </div>
+                        </div>
+
+                        <!-- Versatile Card -->
+                        <div class="shop-card">
+                            <div class="shop-card-content">
+                                <h3 class="shop-card-title">Versatile</h3>
+                                <p class="shop-card-description">For a day in bed: work, relax, study, jump</p>
+                                <img src="https://ii1.pepperfry.com/media/catalog/product/w/h/1100x1210/white-abstract-220-tc-microfiber-king-size-fitted-bedsheet-with-2-pillow-covers-white-abstract-220-t-8rkzv4.jpg" alt="Multi-functional Furniture" loading="lazy">
+                                <a href="gallery.php?category=Bedroom" class="shop-cta-btn">EXPLORE ALL</a>
+                            </div>
+                        </div>
+
+                        <!-- No Partner Disturbance Card -->
+                        <div class="shop-card">
+                            <div class="shop-card-content">
+                                <h3 class="shop-card-title">No partner disturbance</h3>
+                                <p class="shop-card-description">Sound sleep with partners who toss & turn</p>
+                                <img src="https://ii1.pepperfry.com/media/catalog/product/w/h/1100x1210/white-abstract-220-tc-microfiber-king-size-fitted-bedsheet-with-2-pillow-covers-white-abstract-220-t-8rkzv4.jpg" alt="Spacious Beds" loading="lazy">
+                                <a href="gallery.php?category=Mattresses" class="shop-cta-btn">EXPLORE ALL</a>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <!-- View All Button -->
-                    <div class="view-all-section">
-                        <a href="gallery.php" class="view-all-btn" id="viewAllBtn">
-                            <span class="view-all-text">View All Living Room Products</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="9 18 15 12 9 6"></polyline>
-                            </svg>
+                </div>
+            </div>
+
+                        <!-- Modular Section -->
+            <div class="modular-section">
+                <div class="hero-container">
+                    <h2 class="section-title">Premium Collections, Living Room & More</h2>
+                    <p class="section-subtitle">Custom-designed modular solutions crafted with precision engineering and premium materials</p>
+                    <div class="modular-grid">
+                        <div class="modular-banner modular-large">
+                            <img src="https://ii1.pepperfry.com/media/catalog/product/c/a/1600x1760/canedo-velvet-chaise-lounger-in-beige-colour-by-casacraft-canedo-velvet-chaise-lounger-in-beige-colo-zqhuzh.jpg" alt="Premium Modular Furniture" loading="lazy">
+                            <div class="modular-banner-content">
+                                <span class="modular-badge">PREMIUM COLLECTION</span>
+                                <h3 class="modular-title">Transform Your Interiors with Modular Excellence</h3>
+                                <p class="modular-description">Engineered wood with laminate finish, soft-close hinges, and customizable configurations</p>
+                                <a href="gallery.php" class="modular-cta">View Collection</a>
+                            </div>
+                        </div>
+
+                        <a href="gallery.php?category=Bedroom" class="modular-banner modular-large">
+                            <img src="https://ii1.pepperfry.com/media/catalog/product/c/a/1600x1760/canedo-velvet-chaise-lounger-in-beige-colour-by-casacraft-canedo-velvet-chaise-lounger-in-beige-colo-zqhuzh.jpg" alt="Bedroom Collection" loading="lazy">
+                            
+                            <div class="modular-banner-overlay">
+                                <div class="modular-overlay-content">
+                                    <h4 class="overlay-title">Bedroom Collection</h4>
+                                    <p class="overlay-description">Wardrobes with mirror finish, storage beds with hydraulic mechanism</p>
+                                </div>
+                            </div>
                         </a>
                     </div>
+
+                    <a href="gallery.php?category=Living%20Room" class="modular-bottom-banner">
+                        <div class="modular-banner-split">
+                            <div class="modular-banner-left">
+                                <h3 class="modular-product-title">Linnea TV Unit Collection</h3>
+                                <p class="modular-product-description">Modern entertainment solutions with cable management, LED strip compatibility, and premium matte finish. Available in multiple sizes and configurations.</p>
+                                <div class="product-features">
+                                    <span class="feature-tag">Sheesham Wood</span>
+                                    <span class="feature-tag">Cable Management</span>
+                                    <span class="feature-tag">LED Ready</span>
+                                </div>
+                            </div>
+                            <div class="modular-banner-right">
+                                <img src="https://ii1.pepperfry.com/media/catalog/product/c/a/1600x1760/canedo-velvet-chaise-lounger-in-beige-colour-by-casacraft-canedo-velvet-chaise-lounger-in-beige-colo-zqhuzh.jpg" alt="Linnea TV Unit" loading="lazy">
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
 
@@ -514,51 +548,6 @@ $meta_keywords = 'furniture, wooden furniture, home furniture, sofas, beds, dini
                 </div>
             </div>
 
-            <!-- Modular Section -->
-            <div class="modular-section">
-                <div class="hero-container">
-                    <h2 class="section-title">Modular Kitchens, Wardrobes & More</h2>
-                    <p class="section-subtitle">Custom-designed modular solutions crafted with precision engineering and premium materials</p>
-                    <div class="modular-grid">
-                        <div class="modular-banner modular-large">
-                            <img src="https://ii1.pepperfry.com/media/catalog/product/c/a/1600x1760/canedo-velvet-chaise-lounger-in-beige-colour-by-casacraft-canedo-velvet-chaise-lounger-in-beige-colo-zqhuzh.jpg" alt="Premium Modular Furniture" loading="lazy">
-                            <div class="modular-banner-content">
-                                <span class="modular-badge">PREMIUM COLLECTION</span>
-                                <h3 class="modular-title">Transform Your Interiors with Modular Excellence</h3>
-                                <p class="modular-description">Engineered wood with laminate finish, soft-close hinges, and customizable configurations</p>
-                                <a href="gallery.php" class="modular-cta">View Collection</a>
-                            </div>
-                        </div>
-
-                        <a href="gallery.php?category=Bedroom" class="modular-banner modular-large">
-                            <img src="https://ii1.pepperfry.com/media/catalog/product/c/a/1600x1760/canedo-velvet-chaise-lounger-in-beige-colour-by-casacraft-canedo-velvet-chaise-lounger-in-beige-colo-zqhuzh.jpg" alt="Bedroom Collection" loading="lazy">
-                            <div class="modular-banner-overlay">
-                                <div class="modular-overlay-content">
-                                    <h4 class="overlay-title">Bedroom Collection</h4>
-                                    <p class="overlay-description">Wardrobes with mirror finish, storage beds with hydraulic mechanism</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <a href="gallery.php?category=Living%20Room" class="modular-bottom-banner">
-                        <div class="modular-banner-split">
-                            <div class="modular-banner-left">
-                                <h3 class="modular-product-title">Linnea TV Unit Collection</h3>
-                                <p class="modular-product-description">Modern entertainment solutions with cable management, LED strip compatibility, and premium matte finish. Available in multiple sizes and configurations.</p>
-                                <div class="product-features">
-                                    <span class="feature-tag">Sheesham Wood</span>
-                                    <span class="feature-tag">Cable Management</span>
-                                    <span class="feature-tag">LED Ready</span>
-                                </div>
-                            </div>
-                            <div class="modular-banner-right">
-                                <img src="https://ii1.pepperfry.com/media/catalog/product/c/a/1600x1760/canedo-velvet-chaise-lounger-in-beige-colour-by-casacraft-canedo-velvet-chaise-lounger-in-beige-colo-zqhuzh.jpg" alt="Linnea TV Unit" loading="lazy">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
 
             <!-- India's Finest Online Furniture Brand Section -->
             <div class="indias-finest-brand-section">
