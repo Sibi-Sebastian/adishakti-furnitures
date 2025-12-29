@@ -1,0 +1,298 @@
+<?php
+$title = 'About Us - Adishakti Furnitures | Handcrafted Wooden Furniture';
+$meta_description = 'Learn about Adishakti Furnitures - your trusted partner for premium handcrafted wooden furniture. Discover our story, craftsmanship, and commitment to quality.';
+$meta_keywords = 'about Adishakti furnitures, wooden furniture company, handcrafted furniture, furniture craftsmanship, premium furniture maker';
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?= $title ?></title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="<?= $meta_description ?>">
+    <meta name="keywords" content="<?= $meta_keywords ?>">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="<?= $title ?>">
+    <meta property="og:description" content="<?= $meta_description ?>">
+    <meta property="og:image" content="https://ii1.pepperfry.com/media/catalog/product/c/a/1600x1760/canedo-velvet-chaise-lounger-in-beige-colour-by-casacraft-canedo-velvet-chaise-lounger-in-beige-colo-zqhuzh.jpg">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="<?= (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/hero.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <?php include 'components/navbar.php'; ?>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- About Hero Section -->
+        <div class="about-hero">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.php">Home</a>
+                    <span class="breadcrumb-separator">›</span>
+                    <span class="breadcrumb-current">About Us</span>
+                </div>
+                <h1 class="about-title">
+                    About <span class="highlight">Adishakti Furnitures</span>
+                </h1>
+                <p class="about-subtitle">
+                    Crafting timeless furniture with passion, precision, and premium materials since our inception
+                </p>
+            </div>
+        </div>
+
+        <!-- Our Story Section -->
+        <div class="story-section">
+            <div class="container">
+                <div class="story-grid">
+                    <div class="story-image">
+                        <img src="https://ii1.pepperfry.com/media/catalog/product/c/a/1600x1760/canedo-velvet-chaise-lounger-in-beige-colour-by-casacraft-canedo-velvet-chaise-lounger-in-beige-colo-zqhuzh.jpg" alt="Adishakti Furnitures Craftsmanship" loading="lazy">
+                    </div>
+                    <div class="story-content">
+                        <h2 class="section-title">Our Story</h2>
+                        <p class="story-text">
+                            Adishakti Furnitures was born from a passion for creating beautiful, functional furniture that transforms houses into homes. Founded with the vision of bringing premium handcrafted wooden furniture to every household, we have been dedicated to excellence in craftsmanship and customer satisfaction.
+                        </p>
+                        <p class="story-text">
+                            Our journey began with a simple belief: that furniture should not just be functional, but should also tell a story, reflect personality, and create lasting memories. Every piece we create is a testament to this philosophy, combining traditional woodworking techniques with modern design sensibilities.
+                        </p>
+                        <div class="story-highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-number">8,247+</div>
+                                <div class="highlight-label">Happy Customers</div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-number">387+</div>
+                                <div class="highlight-label">Unique Designs</div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-number">43+</div>
+                                <div class="highlight-label">Cities Served</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Our Values Section -->
+        <div class="values-section">
+            <div class="container">
+                <h2 class="section-title text-center">Our Values</h2>
+                <p class="section-subtitle text-center">
+                    The principles that guide everything we do
+                </p>
+                
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                <path d="M9 12l2 2 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="value-title">Quality First</h3>
+                        <p class="value-description">
+                            We never compromise on quality. Every piece of furniture undergoes rigorous quality checks to ensure it meets our high standards and your expectations.
+                        </p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="value-title">Customer Centric</h3>
+                        <p class="value-description">
+                            Your satisfaction is our priority. We listen to your needs, understand your vision, and work tirelessly to exceed your expectations with every interaction.
+                        </p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"></path>
+                            </svg>
+                        </div>
+                        <h3 class="value-title">Craftsmanship</h3>
+                        <p class="value-description">
+                            Our skilled artisans bring decades of experience to every piece. Traditional techniques combined with modern tools create furniture that's both beautiful and durable.
+                        </p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <h3 class="value-title">Innovation</h3>
+                        <p class="value-description">
+                            We continuously evolve our designs and processes, embracing new technologies while respecting traditional craftsmanship to create furniture for modern living.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Our Process Section -->
+        <div class="process-section">
+            <div class="container">
+                <h2 class="section-title text-center">Our Crafting Process</h2>
+                <p class="section-subtitle text-center">
+                    From concept to creation, every step is carefully executed
+                </p>
+                
+                <div class="process-timeline">
+                    <div class="process-step">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Design & Planning</h3>
+                            <p class="step-description">
+                                Our designers work closely with you to understand your vision and create detailed plans that bring your ideas to life.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Material Selection</h3>
+                            <p class="step-description">
+                                We carefully select premium quality wood and materials, ensuring each piece meets our strict standards for durability and beauty.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Expert Crafting</h3>
+                            <p class="step-description">
+                                Our skilled artisans use time-tested techniques combined with modern tools to craft each piece with precision and care.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Quality Assurance</h3>
+                            <p class="step-description">
+                                Every finished piece undergoes thorough quality checks to ensure it meets our high standards before reaching your home.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">05</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Delivery & Setup</h3>
+                            <p class="step-description">
+                                We provide professional delivery and installation services to ensure your furniture is perfectly placed in your space.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Why Choose Us Section -->
+        <div class="why-choose-section">
+            <div class="container">
+                <div class="why-choose-grid">
+                    <div class="why-choose-image">
+                        <img src="https://ii1.pepperfry.com/media/catalog/product/w/h/1100x1210/white-abstract-220-tc-microfiber-king-size-fitted-bedsheet-with-2-pillow-covers-white-abstract-220-t-8rkzv4.jpg" alt="Quality Furniture" loading="lazy">
+                    </div>
+                    <div class="why-choose-content">
+                        <h2 class="section-title">Why Choose Adishakti Furnitures?</h2>
+                        <div class="features-list">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 12l2 2 4-4"></path>
+                                        <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"></path>
+                                        <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"></path>
+                                        <path d="M12 3c0 1-1 3-3 3s-3-2-3-3 1-3 3-3 3 2 3 3"></path>
+                                        <path d="M12 21c0-1 1-3 3-3s3 2 3 3-1 3-3 3-3-2-3-3"></path>
+                                    </svg>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Premium Quality Materials</h4>
+                                    <p>We use only the finest wood and materials sourced from trusted suppliers.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                        <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>
+                                        <polyline points="7.5 19.79 7.5 14.6 3 12"></polyline>
+                                        <polyline points="21 12 16.5 14.6 16.5 19.79"></polyline>
+                                        <polyline points="12 22.81 12 17"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>10 Year Warranty</h4>
+                                    <p>Comprehensive warranty coverage with dedicated customer support.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Expert Consultation</h4>
+                                    <p>Free design consultation with our interior experts.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    
+    <!-- Footer -->
+    <?php include 'components/footer.php'; ?>
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+    
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

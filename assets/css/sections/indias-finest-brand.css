@@ -1,0 +1,253 @@
+/* India's Finest Online Furniture Brand Section */
+.indias-finest-brand-section {
+  background: #ffffff;
+  padding: 80px 0;
+  position: relative;
+}
+
+.finest-brand-header {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 0 20px;
+}
+
+.finest-brand-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #333333;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+.finest-brand-categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.brand-category-card {
+  display: block;
+  text-decoration: none;
+  position: relative;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 16px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.brand-category-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.brand-category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.brand-category-card:hover img {
+  transform: scale(1.05);
+}
+
+.category-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 32px;
+  z-index: 1;
+}
+
+/* Remove all color overlays - use minimal dark overlay for text readability */
+.dining-card .category-overlay,
+.bedroom-card .category-overlay,
+.living-card .category-overlay,
+.study-card .category-overlay,
+.outdoor-card .category-overlay,
+.kids-card .category-overlay,
+.office-card .category-overlay,
+.decor-card .category-overlay,
+.more-card .category-overlay {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* More Card Special Styling */
+.more-card .category-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.category-info {
+  color: white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.more-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+  line-height: 1.2;
+}
+
+.category-subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  opacity: 0.95;
+}
+
+.more-button {
+  background: rgba(255, 255, 255, 0.95);
+  color: #333333;
+  padding: 14px 24px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.more-card:hover .more-button {
+  background: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.more-button svg {
+  transition: transform 0.3s ease;
+}
+
+.more-card:hover .more-button svg {
+  transform: translateX(4px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .finest-brand-categories {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 30px;
+  }
+  
+  .finest-brand-title {
+    font-size: 40px;
+  }
+  
+  .brand-category-card {
+    height: 400px;
+  }
+  
+  .category-overlay {
+    padding: 28px;
+  }
+  
+  .category-title {
+    font-size: 26px;
+  }
+  
+  .category-subtitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .indias-finest-brand-section {
+    padding: 60px 0;
+  }
+  
+  .finest-brand-categories {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0 20px;
+  }
+  
+  .finest-brand-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  
+  .brand-category-card {
+    height: 350px;
+  }
+  
+  .category-overlay {
+    padding: 24px;
+  }
+  
+  .category-title {
+    font-size: 24px;
+  }
+  
+  .category-subtitle {
+    font-size: 16px;
+  }
+  
+  .more-button {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .indias-finest-brand-section {
+    padding: 40px 0;
+  }
+  
+  .finest-brand-categories {
+    padding: 0 16px;
+  }
+  
+  .finest-brand-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .brand-category-card {
+    height: 300px;
+  }
+  
+  .category-overlay {
+    padding: 20px;
+  }
+  
+  .category-title {
+    font-size: 22px;
+  }
+  
+  .category-subtitle {
+    font-size: 14px;
+  }
+  
+  .more-button {
+    font-size: 12px;
+    padding: 10px 18px;
+  }
+}
