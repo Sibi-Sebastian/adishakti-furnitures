@@ -89,6 +89,7 @@
 .story-section {
   padding: 50px 0;
   background: #FFFFFF;
+  border-bottom: 4px solid var(--primary-gold);
 }
 
 .story-grid {
@@ -160,6 +161,7 @@
 .values-section {
   padding: 50px 0;
   background: #FAFAFA;
+  border-bottom: 4px solid var(--primary-gold);
 }
 
 .values-grid {
@@ -214,6 +216,7 @@
 .process-section {
   padding: 50px 0;
   background: #FFFFFF;
+  border-bottom: 4px solid var(--primary-gold);
 }
 
 .process-timeline {
@@ -226,7 +229,7 @@
   position: absolute;
   left: 30px;
   top: 0;
-  bottom: 0;
+  height: calc(100% - 60px);
   width: 2px;
   background: var(--gradient-warm);
 }
@@ -241,6 +244,10 @@
 
 .process-step:last-child {
   margin-bottom: 0;
+}
+
+.process-step:last-child .step-number::after {
+  display: none;
 }
 
 .step-number {
@@ -282,6 +289,7 @@
 .why-choose-section {
   padding: 50px 0;
   background: #FAFAFA;
+  border-bottom: 4px solid var(--primary-gold);
 }
 
 .why-choose-grid {

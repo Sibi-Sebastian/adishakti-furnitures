@@ -8,9 +8,12 @@ document.addEventListener('DOMContentLoaded', function() {
     try {
         initializeSlideshow();
         initializeBackToTop();
+        initializeScrollHandlers(); // Consolidated scroll functionality
         initializeProductFilters();
         initializeMobileMenu();
         initializeSearch();
+        initializeNavbarScroll(); // Additional navbar functionality
+        initializeTouchImprovements(); // Mobile touch improvements
         
         initializeTestimonialsCarousel();
     } catch (error) {
@@ -146,20 +149,49 @@ function initializeBackToTop() {
     
     if (!backToTopBtn) return;
 
-    window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 300) {
-            backToTopBtn.classList.add('show');
-        } else {
-            backToTopBtn.classList.remove('show');
-        }
-    });
-
     backToTopBtn.addEventListener('click', () => {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
         });
     });
+}
+
+// Consolidated scroll handler for better performance
+function initializeScrollHandlers() {
+    const backToTopBtn = document.getElementById('backToTop');
+    
+    // Single optimized scroll handler - only for back to top button
+    const handleScroll = debounce(() => {
+        const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // Back to top button logic
+        if (backToTopBtn) {
+            if (currentScrollTop > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        }
+    }, 10);
+
+    // Add single scroll event listener
+    window.addEventListener('scroll', handleScroll, { passive: true });
+}
+
+// Navbar additional functionality - removed scroll hiding
+function initializeNavbarScroll() {
+    // Always show navbar when mobile menu is open
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    if (mobileMenuToggle) {
+        mobileMenuToggle.addEventListener('click', () => {
+            const navbar = document.querySelector('.navbar');
+            if (navbar) {
+                navbar.classList.remove('navbar-hidden');
+                navbar.classList.add('navbar-visible');
+            }
+        });
+    }
 }
 
 // Mobile menu functionality
@@ -437,11 +469,6 @@ function debounce(func, wait) {
     };
 }
 
-// Optimize scroll events
-window.addEventListener('scroll', debounce(() => {
-    // Any scroll-based functionality can go here
-}, 10));
-
 // Add loading states for better UX
 function showLoading(element) {
     element.classList.add('loading');
@@ -634,17 +661,32 @@ function initializeTouchImprovements() {
     });
 }
 
-// Add to initialization
-document.addEventListener('DOMContentLoaded', function() {
-    try {
-        initializeSlideshow();
-        initializeBackToTop();
-        initializeProductFilters();
-        initializeMobileMenu();
-        initializeSearch();
-        initializeTouchImprovements();
-        initializeTestimonialsCarousel();
-    } catch (error) {
-        // Silent error handling for production
+// Mobile touch improvements
+function initializeTouchImprovements() {
+    // Add touch class to body for CSS targeting
+    if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+        document.body.classList.add('touch-device');
     }
-});
+
+    // Improve touch scrolling on iOS
+    if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+        document.body.style.webkitOverflowScrolling = 'touch';
+    }
+
+    // Handle orientation change
+    window.addEventListener('orientationchange', function() {
+        // Force a reflow to fix layout issues on orientation change
+        setTimeout(function() {
+            window.scrollTo(0, window.scrollY);
+        }, 100);
+    });
+
+    // Prevent double-tap zoom on buttons
+    const buttons = document.querySelectorAll('button, .btn, [role="button"]');
+    buttons.forEach(button => {
+        button.addEventListener('touchend', function(e) {
+            e.preventDefault();
+            this.click();
+        });
+    });
+}

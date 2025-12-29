@@ -330,6 +330,7 @@
 .map-section {
   padding: 80px 0;
   background: linear-gradient(135deg, var(--secondary-cream) 0%, var(--neutral-light) 100%);
+  border-top: 4px solid var(--primary-gold);
 }
 
 .map-container {

@@ -1,7 +1,7 @@
 <!-- Modular Section -->
 <div class="modular-section">
     <div class="hero-container">
-        <h2 class="section-title">Modular Kitchens, Wardrobes & More</h2>
+        <h2 class="section-title">Premium Collections, Living Room & More</h2>
         <p class="section-subtitle">Custom-designed modular solutions crafted with precision engineering and premium materials</p>
         <div class="modular-grid">
             <div class="modular-banner modular-large">
@@ -16,6 +16,7 @@
 
             <a href="gallery.php?category=Bedroom" class="modular-banner modular-large">
                 <img src="https://ii1.pepperfry.com/media/catalog/product/c/a/1600x1760/canedo-velvet-chaise-lounger-in-beige-colour-by-casacraft-canedo-velvet-chaise-lounger-in-beige-colo-zqhuzh.jpg" alt="Bedroom Collection" loading="lazy">
+                
                 <div class="modular-banner-overlay">
                     <div class="modular-overlay-content">
                         <h4 class="overlay-title">Bedroom Collection</h4>
@@ -25,8 +26,8 @@
             </a>
         </div>
 
-        <a href="gallery.php?category=Living%20Room" class="modular-bottom-banner">
-            <div class="modular-banner-split">
+                <a href="gallery.php?category=Living%20Room" class="modular-bottom-banner" style="min-height: 768px;">
+            <div class="modular-banner-split" style="min-height: 768px;">
                 <div class="modular-banner-left">
                     <h3 class="modular-product-title">Linnea TV Unit Collection</h3>
                     <p class="modular-product-description">Modern entertainment solutions with cable management, LED strip compatibility, and premium matte finish. Available in multiple sizes and configurations.</p>
@@ -36,7 +37,7 @@
                         <span class="feature-tag">LED Ready</span>
                     </div>
                 </div>
-                <div class="modular-banner-right">
+                <div class="modular-banner-right" style="min-height: 768px;">
                     <img src="https://ii1.pepperfry.com/media/catalog/product/c/a/1600x1760/canedo-velvet-chaise-lounger-in-beige-colour-by-casacraft-canedo-velvet-chaise-lounger-in-beige-colo-zqhuzh.jpg" alt="Linnea TV Unit" loading="lazy">
                 </div>
             </div>

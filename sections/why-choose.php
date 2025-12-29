@@ -3,7 +3,7 @@
     <div class="hero-container">
         <div class="why-wooden-grid">
             <div class="why-wooden-content">
-                <h2 class="section-title">Why Choose Adishakti Furnitures?</h2>
+                <h2 class="section-title">Why Adishakti Furnitures?</h2>
                 <p class="section-subtitle">Discover the timeless benefits that make wooden furniture the perfect choice for your home</p>
                 
                 <div class="benefits-list">

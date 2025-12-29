@@ -232,4 +232,8 @@ function getFeaturedProducts() {
         ]
     ];
 }
+
+function getGalleryCategoriesData() {
+    return ['All', 'Living Room', 'Bedroom', 'Dining', 'Mattresses', 'Home Office', 'Home Decor'];
+}
 ?>

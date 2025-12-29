@@ -3,7 +3,6 @@
     <div class="hero-container">
         <!-- Left Side - Content -->
         <div class="hero-content-side">
-            <div class="hero-badge">✨ Handcrafted with Love</div>
             <h1 class="hero-main-title">
                 Transform Your Space with
                 <span class="hero-highlight"> Timeless Elegance</span>
@@ -66,16 +65,6 @@
                             <p><?= $product['description'] ?></p>
                         </div>
                     </div>
-                <?php endforeach; ?>
-            </div>
-
-            <div class="showcase-indicators">
-                <?php foreach ($featured_products as $index => $product): ?>
-                    <button
-                        class="indicator <?= $index === 0 ? 'active' : '' ?>"
-                        onclick="changeSlide(<?= $index ?>)"
-                        aria-label="View slide <?= $index + 1 ?>"
-                    ></button>
                 <?php endforeach; ?>
             </div>
 

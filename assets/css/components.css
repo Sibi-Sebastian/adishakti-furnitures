@@ -1,21 +1,10 @@
 /* Testimonials Section - Optimized */
 .testimonials-section {
   background: linear-gradient(135deg, var(--secondary-cream) 0%, var(--neutral-light) 100%);
-  padding: 60px 0 0 0;
+  padding: 20px 0 40px 0;
   margin-bottom: 0;
   position: relative;
-  border-top: 3px solid var(--primary-gold);
-}
-
-.testimonials-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: var(--gradient-earth);
-  opacity: 0.6;
+  border-bottom: 4px solid var(--primary-gold);
 }
 
 .testimonials-container {
@@ -134,7 +123,7 @@
 .trust-signals-section {
   background: #FFFFFF;
   padding: 60px 0;
-  border-top: 3px solid var(--primary-gold);
+  border-bottom: 4px solid var(--primary-gold);
 }
 
 .trust-signals-container {
@@ -381,7 +370,7 @@
 @media (max-width: 768px) {
   .testimonials-section,
   .trust-signals-section {
-    padding: 30px 0 0 0;
+    padding: 40px 0 40px 0;
   }
 
   .testimonials-grid {
@@ -421,7 +410,7 @@
 @media (max-width: 480px) {
   .testimonials-section,
   .trust-signals-section {
-    padding: 25px 0 0 0;
+    padding: 30px 0 30px 0;
   }
 
   .testimonials-container,
@@ -491,8 +480,9 @@
 /* India's Finest Online Furniture Brand Section */
 .indias-finest-brand-section {
   background: #ffffff;
-  padding: 80px 0;
   position: relative;
+  padding: 50px 0;
+  border-bottom: 4px solid var(--primary-gold);
 }
 
 .finest-brand-header {

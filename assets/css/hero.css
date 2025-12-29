@@ -1,6 +1,11 @@
+/* Critical CSS - Prevent Layout Shifts */
+.modular-banner-split {
+  min-height: 768px !important;
+  height: 768px !important;
+}
+
 /* Split Hero Section */
 .hero-split {
-  min-height: 85vh;
   background: #FFFFFF;
   position: relative;
   overflow: hidden;
@@ -16,11 +21,11 @@
 .hero-split .hero-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  gap: 40px;
   align-items: center;
-  min-height: 85vh;
-  padding: 40px 40px 20px 40px;
-  margin: 0;
+  padding: 20px 40px;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 .hero-container {
@@ -62,11 +67,11 @@
 }
 
 .hero-main-title {
-  font-size: 56px;
+  font-size: 48px;
   font-weight: 700;
   line-height: 1.1;
   color: var(--neutral-dark);
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   letter-spacing: -0.5px;
 }
 
@@ -78,37 +83,59 @@
 }
 
 .hero-description {
-  font-size: 18px;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.6;
   color: #64748B;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
   max-width: 540px;
 }
 
 .hero-stats {
   display: flex;
   gap: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
   padding: 24px 0;
   border-top: 1px solid #E2E8F0;
   border-bottom: 1px solid #E2E8F0;
+  background: rgba(255, 254, 249, 0.5);
+  border-radius: 12px;
+  padding: 24px 20px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
 }
 
 .stat-item {
-  text-align: left;
+  text-align: center;
+  flex: 1;
+  position: relative;
+}
+
+.stat-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 40px;
+  background: rgba(212, 175, 55, 0.3);
 }
 
 .stat-number {
-  font-size: 32px;
-  font-weight: 700;
-  color: #1E293B;
-  margin-bottom: 4px;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--primary-gold);
+  margin-bottom: 6px;
+  line-height: 1;
+  letter-spacing: -0.5px;
 }
 
 .stat-label {
-  font-size: 13px;
-  color: #94A3B8;
-  font-weight: 500;
+  font-size: 12px;
+  color: var(--neutral-medium);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
 }
 
 .hero-cta-group {
@@ -189,8 +216,9 @@
 /* Right Showcase Side */
 .hero-showcase-side {
   position: relative;
-  height: 600px;
+  height: 507px;
   animation: fadeInRight 0.8s ease-out;
+  padding: 20px 0;
 }
 
 @keyframes fadeInRight {
@@ -255,30 +283,7 @@
   opacity: 0.9;
 }
 
-.showcase-indicators {
-  position: absolute;
-  bottom: 24px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 8px;
-  z-index: 10;
-}
 
-.indicator {
-  width: 40px;
-  height: 3px;
-  background: rgba(255, 255, 255, 0.4);
-  border: none;
-  border-radius: 2px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.indicator.active {
-  background: white;
-  width: 60px;
-}
 
 /* Floating Badges */
 .floating-badge {
@@ -626,6 +631,7 @@
 .featured-banner-section {
   padding: 40px 0;
   margin-top: 0;
+  border-bottom: 4px solid var(--primary-gold);
 }
 
 .featured-banner {
@@ -709,10 +715,10 @@
 /* New Collection Section - Optimized */
 .new-collection-section {
   background: #FFFFFF;
-  padding: 50px 0;
+  padding: 12px 0;
   margin-top: 0;
   position: relative;
-  border-top: 3px solid var(--primary-gold);
+  border-bottom: 4px solid var(--primary-gold);
 }
 
 .collection-grid {
@@ -821,9 +827,9 @@
 
 /* Modular Section - Optimized */
 .modular-section {
-  padding: 50px 0;
+  padding: 10px 0;
   background: #FFFFFF;
-  border-top: 3px solid var(--primary-gold);
+  border-bottom: 4px solid var(--primary-gold);
   position: relative;
 }
 
@@ -936,7 +942,9 @@
 .modular-banner-split {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  min-height: 300px;
+  min-height: 768px; /* Doubled from 384px */
+  height: 768px; /* Force exact height to prevent any shifts */
+  overflow: hidden; /* Prevent content from affecting height */
 }
 
 .modular-banner-left {
@@ -945,6 +953,7 @@
   justify-content: center;
   padding: 40px;
   color: white;
+  min-height: 768px; /* Doubled from 384px */
 }
 
 .modular-product-title {
@@ -961,6 +970,8 @@
 
 .modular-banner-right {
   position: relative;
+  min-height: 768px; /* Doubled from 384px */
+  overflow: hidden;
 }
 
 .modular-banner-right img {
@@ -976,7 +987,7 @@
   padding: 60px 0;
   margin-top: 0;
   position: relative;
-  border-top: 4px solid var(--primary-gold);
+  border-bottom: 4px solid var(--primary-gold);
 }
 
 .section-description {
@@ -1200,6 +1211,9 @@
 
   .modular-banner-split {
     grid-template-columns: 1fr;
+    min-height: 768px; /* Doubled from 384px */
+    height: 768px; /* Force exact height */
+    overflow: hidden;
   }
 
   .modular-product-title {
@@ -1320,6 +1334,20 @@
 
   .modular-banner {
     height: 300px;
+  }
+
+  .modular-banner-split {
+    min-height: 768px; /* Doubled from 384px */
+    height: 768px; /* Force exact height */
+    overflow: hidden;
+  }
+
+  .modular-banner-left {
+    min-height: 768px; /* Doubled from 384px */
+  }
+
+  .modular-banner-right {
+    min-height: 768px; /* Doubled from 384px */
   }
 
   .modular-banner-content {
@@ -1710,7 +1738,7 @@
   background: #FFFFFF;
   padding: 60px 0;
   position: relative;
-  border-top: 3px solid var(--primary-gold);
+  border-bottom: 4px solid var(--primary-gold);
 }
 
 .why-wooden-grid {
@@ -1794,7 +1822,7 @@
   background: #FFFFFF;
   padding: 80px 0;
   position: relative;
-  border-top: 3px solid var(--primary-gold);
+  border-bottom: 4px solid var(--primary-gold);
 }
 
 .excellence-header {
