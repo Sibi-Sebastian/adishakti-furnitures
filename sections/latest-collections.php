@@ -2,7 +2,7 @@
 <div class="new-collection-section">
     <div class="hero-container">
         <h2 class="section-title">Latest Collections</h2>
-        
+        <p class="section-subtitle">Custom-designed modular solutions crafted with precision engineering and premium materials</p>
         <div class="collection-grid">
             <a href="gallery.php" class="collection-card collection-large">
                 <img src="https://ii1.pepperfry.com/media/catalog/product/c/a/1600x1760/canedo-velvet-chaise-lounger-in-beige-colour-by-casacraft-canedo-velvet-chaise-lounger-in-beige-colo-zqhuzh.jpg" alt="Astra Collection" loading="lazy">
