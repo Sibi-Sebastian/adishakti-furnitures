@@ -1,7 +1,7 @@
 <!-- Latest Collections Section -->
 <div class="new-collection-section">
     <div class="hero-container">
-        <h2 class="section-title">Latest Collections</h2>
+        <h2 class="section-title">Our Latest Collections</h2>
         <p class="section-subtitle">Custom-designed modular solutions crafted with precision engineering and premium materials</p>
         <div class="collection-grid">
             <a href="gallery.php" class="collection-card collection-large">

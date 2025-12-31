@@ -132,8 +132,6 @@
                     <a href="privacy-policy.php">Privacy Policy</a>
                     <span>•</span>
                     <a href="privacy-policy.php#security">Security</a>
-                    <span>•</span>
-                    <a href="privacy-policy.php#grievance">Grievance Redressal</a>
                 </div>
                 <p class="copyright">
                     © 2025 Adishakti Furnitures. All rights reserved.

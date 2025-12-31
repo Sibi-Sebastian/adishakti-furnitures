@@ -343,6 +343,12 @@
     padding: 14px 24px;
   }
 
+  /* Hide call and WhatsApp buttons on mobile */
+  .hero-cta-secondary,
+  .hero-cta-whatsapp {
+    display: none;
+  }
+
   .hero-showcase-side {
     height: 400px;
   }

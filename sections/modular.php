@@ -26,8 +26,8 @@
             </a>
         </div>
 
-                <a href="gallery.php?category=Living%20Room" class="modular-bottom-banner" style="min-height: 768px;">
-            <div class="modular-banner-split" style="min-height: 768px;">
+                <a href="gallery.php?category=Living%20Room" class="modular-bottom-banner">
+            <div class="modular-banner-split">
                 <div class="modular-banner-left">
                     <h3 class="modular-product-title">Linnea TV Unit Collection</h3>
                     <p class="modular-product-description">Modern entertainment solutions with cable management, LED strip compatibility, and premium matte finish. Available in multiple sizes and configurations.</p>

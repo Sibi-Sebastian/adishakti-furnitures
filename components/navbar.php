@@ -9,10 +9,14 @@
                 id="mobileMenuToggle"
                 onclick="toggleMobileMenu()"
             >
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <line x1="3" y1="12" x2="21" y2="12"></line>
                     <line x1="3" y1="6" x2="21" y2="6"></line>
                     <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+                <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
                 </svg>
             </button>
 
@@ -21,6 +25,21 @@
                 <a href="index.php" class="logo">
                     <img src="assets/images/logo.png" alt="Adishakti Furnitures" class="logo-image">
                 </a>
+            </div>
+
+            <!-- Mobile/Tablet Search Bar -->
+            <div class="mobile-navbar-search">
+                <form class="mobile-search-form" onsubmit="handleMobileNavbarSearch(event)">
+                    <input 
+                        type="text" 
+                        class="mobile-search-input" 
+                        placeholder="Search furniture..."
+                        id="mobileNavbarSearchInput"
+                    >
+                    <button type="submit" class="mobile-search-button" aria-label="Search">
+                        🔍
+                    </button>
+                </form>
             </div>
 
             <!-- Main Navigation Links -->
@@ -136,21 +155,11 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
         <div class="mobile-menu-content">
-            <!-- Mobile Search -->
-            <div class="mobile-search">
-                <form class="search-form" onsubmit="handleSearch(event)">
-                    <input 
-                        type="text" 
-                        class="search-input" 
-                        placeholder="Search furniture..."
-                    >
-                    <button type="submit" class="search-button">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                    </button>
-                </form>
+            <!-- Mobile Menu Header with Logo -->
+            <div class="mobile-menu-header">
+                <div class="mobile-menu-logo">
+                    <img src="assets/images/logo.png" alt="Adishakti Furnitures" class="mobile-menu-logo-image">
+                </div>
             </div>
             
             <!-- Mobile Navigation -->
@@ -222,4 +231,6 @@
             </div>
         </div>
     </div>
+
+
 </nav>

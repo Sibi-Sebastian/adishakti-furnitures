@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         initializeTouchImprovements(); // Mobile touch improvements
         
         initializeTestimonialsCarousel();
+        initializeMobileSearch(); // Add mobile search functionality
     } catch (error) {
         console.error('Error initializing page:', error);
     }
@@ -250,15 +251,6 @@ function openMobileMenu() {
     mobileMenuToggle.setAttribute('aria-expanded', 'true');
     mobileMenuToggle.classList.add('active');
     
-    // Update toggle icon to X
-    const svg = mobileMenuToggle.querySelector('svg');
-    if (svg) {
-        svg.innerHTML = `
-            <line x1="18" y1="6" x2="6" y2="18"></line>
-            <line x1="6" y1="6" x2="18" y2="18"></line>
-        `;
-    }
-    
     // Prevent body scroll
     document.body.style.overflow = 'hidden';
 }
@@ -274,16 +266,6 @@ function closeMobileMenu() {
     mobileMenu.classList.remove('show');
     mobileMenuToggle.setAttribute('aria-expanded', 'false');
     mobileMenuToggle.classList.remove('active');
-    
-    // Update toggle icon to hamburger
-    const svg = mobileMenuToggle.querySelector('svg');
-    if (svg) {
-        svg.innerHTML = `
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-        `;
-    }
     
     // Restore body scroll
     document.body.style.overflow = '';
@@ -690,3 +672,128 @@ function initializeTouchImprovements() {
         });
     });
 }
+
+// Mobile Search Functionality
+function initializeMobileSearch() {
+    const searchOverlay = document.getElementById('mobileSearchOverlay');
+    const searchInput = document.getElementById('mobileSearchInput');
+    
+    if (!searchOverlay || !searchInput) return;
+    
+    // Close overlay when clicking outside content
+    searchOverlay.addEventListener('click', function(e) {
+        if (e.target === searchOverlay) {
+            closeMobileSearch();
+        }
+    });
+    
+    // Focus input when overlay opens
+    searchOverlay.addEventListener('transitionend', function() {
+        if (searchOverlay.classList.contains('show')) {
+            searchInput.focus();
+        }
+    });
+    
+    // Handle escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && searchOverlay.classList.contains('show')) {
+            closeMobileSearch();
+        }
+    });
+}
+
+function toggleMobileSearch() {
+    const searchOverlay = document.getElementById('mobileSearchOverlay');
+    const searchToggle = document.getElementById('mobileSearchToggle');
+    
+    if (!searchOverlay || !searchToggle) return;
+    
+    const isOpen = searchOverlay.classList.contains('show');
+    
+    if (isOpen) {
+        closeMobileSearch();
+    } else {
+        openMobileSearch();
+    }
+}
+
+function openMobileSearch() {
+    const searchOverlay = document.getElementById('mobileSearchOverlay');
+    const searchToggle = document.getElementById('mobileSearchToggle');
+    const searchInput = document.getElementById('mobileSearchInput');
+    
+    if (!searchOverlay || !searchToggle) return;
+    
+    searchOverlay.classList.add('show');
+    searchToggle.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    
+    // Focus input after animation
+    setTimeout(() => {
+        if (searchInput) searchInput.focus();
+    }, 300);
+}
+
+function closeMobileSearch() {
+    const searchOverlay = document.getElementById('mobileSearchOverlay');
+    const searchToggle = document.getElementById('mobileSearchToggle');
+    const searchInput = document.getElementById('mobileSearchInput');
+    
+    if (!searchOverlay || !searchToggle) return;
+    
+    searchOverlay.classList.remove('show');
+    searchToggle.classList.remove('active');
+    document.body.style.overflow = '';
+    
+    // Clear input
+    if (searchInput) searchInput.value = '';
+}
+
+function handleMobileSearch(event) {
+    event.preventDefault();
+    
+    const searchInput = document.getElementById('mobileSearchInput');
+    if (!searchInput) return;
+    
+    const query = searchInput.value.trim();
+    
+    if (query) {
+        // Redirect to gallery with search query
+        window.location.href = `gallery.php?search=${encodeURIComponent(query)}`;
+    }
+}
+
+function searchFor(term) {
+    const searchInput = document.getElementById('mobileSearchInput');
+    if (searchInput) {
+        searchInput.value = term;
+    }
+    
+    // Redirect to gallery with search term
+    window.location.href = `gallery.php?search=${encodeURIComponent(term)}`;
+}
+
+// Export mobile search functions for global access
+window.toggleMobileSearch = toggleMobileSearch;
+window.openMobileSearch = openMobileSearch;
+window.closeMobileSearch = closeMobileSearch;
+window.handleMobileSearch = handleMobileSearch;
+window.searchFor = searchFor;
+
+// Mobile Navbar Search Functionality
+function handleMobileNavbarSearch(event) {
+    event.preventDefault();
+    
+    const searchInput = document.getElementById('mobileNavbarSearchInput');
+    if (!searchInput) return;
+    
+    const query = searchInput.value.trim();
+    
+    if (query) {
+        // Redirect to gallery with search query
+        window.location.href = `gallery.php?search=${encodeURIComponent(query)}`;
+    }
+}
+
+// Export mobile navbar search function for global access
+window.handleMobileNavbarSearch = handleMobileNavbarSearch;

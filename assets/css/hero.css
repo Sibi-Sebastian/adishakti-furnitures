@@ -1,7 +1,41 @@
 /* Critical CSS - Prevent Layout Shifts */
 .modular-banner-split {
+  min-height: 768px;
+  height: 768px;
+}
+
+/* Prevent FOUC for Linnea TV Unit Collection */
+.modular-bottom-banner {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Linnea TV Unit Collection - Specific Styles to Prevent Conflicts */
+.modular-bottom-banner .modular-banner-split {
+  display: grid !important;
+  grid-template-columns: 1fr 2fr !important;
   min-height: 768px !important;
   height: 768px !important;
+  align-items: center;
+  overflow: hidden;
+}
+
+.modular-bottom-banner .modular-banner-left {
+  background: linear-gradient(135deg, rgba(113, 86, 36, 0.95) 0%, rgba(139, 69, 19, 0.95) 100%) !important;
+  color: white !important;
+  padding: 40px !important;
+  min-height: 768px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
+.modular-bottom-banner .modular-banner-right {
+  min-height: 768px !important;
+  height: 768px !important;
+  overflow: hidden !important;
+  position: relative !important;
 }
 
 /* Split Hero Section */
@@ -171,23 +205,23 @@
   display: inline-flex;
   align-items: center;
   padding: 14px 28px;
-  background: rgba(255, 255, 255, 0.7);
+  background: #007BFF;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  color: #1E293B;
+  color: white;
   font-size: 15px;
   font-weight: 600;
   border-radius: 12px;
-  border: 1px solid rgba(226, 232, 240, 0.8);
+  border: 1px solid rgba(0, 123, 255, 0.3);
   transition: all 0.3s;
-  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .hero-cta-secondary:hover {
-  border-color: rgba(203, 213, 225, 0.8);
-  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(0, 86, 179, 0.5);
+  background: #0056B3;
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 /* WhatsApp Button Style */
@@ -844,7 +878,7 @@
   position: relative;
   border-radius: 16px;
   overflow: hidden;
-  height: 400px;
+  height: 500px;
   border: 3px solid var(--secondary-beige);
   box-shadow: 0 8px 24px rgba(139, 69, 19, 0.15);
   transition: all 0.3s;
@@ -942,9 +976,8 @@
 .modular-banner-split {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  min-height: 768px; /* Doubled from 384px */
-  height: 768px; /* Force exact height to prevent any shifts */
-  overflow: hidden; /* Prevent content from affecting height */
+  min-height: 768px;
+  overflow: hidden;
 }
 
 .modular-banner-left {
@@ -953,7 +986,7 @@
   justify-content: center;
   padding: 40px;
   color: white;
-  min-height: 768px; /* Doubled from 384px */
+  min-height: 768px;
 }
 
 .modular-product-title {
@@ -970,7 +1003,7 @@
 
 .modular-banner-right {
   position: relative;
-  min-height: 768px; /* Doubled from 384px */
+  min-height: 768px;
   overflow: hidden;
 }
 
@@ -994,7 +1027,7 @@
   font-size: 16px;
   color: var(--neutral-medium);
   line-height: 1.8;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -1163,6 +1196,12 @@
     justify-content: center;
   }
 
+  /* Hide call and WhatsApp buttons on mobile */
+  .hero-cta-secondary,
+  .hero-cta-whatsapp {
+    display: none;
+  }
+
   .hero-showcase-side {
     height: 400px;
   }
@@ -1202,7 +1241,7 @@
   }
 
   .modular-banner {
-    height: 350px;
+    height: 450px;
   }
 
   .modular-title {
@@ -1211,8 +1250,7 @@
 
   .modular-banner-split {
     grid-template-columns: 1fr;
-    min-height: 768px; /* Doubled from 384px */
-    height: 768px; /* Force exact height */
+    min-height: 768px;
     overflow: hidden;
   }
 
@@ -1333,21 +1371,45 @@
   }
 
   .modular-banner {
-    height: 300px;
+    height: 400px;
   }
 
-  .modular-banner-split {
-    min-height: 768px; /* Doubled from 384px */
-    height: 768px; /* Force exact height */
-    overflow: hidden;
+  /* Fix for Linnea TV Unit Collection Mobile View */
+  .modular-bottom-banner {
+    min-height: auto !important;
+    height: auto !important;
   }
 
-  .modular-banner-left {
-    min-height: 768px; /* Doubled from 384px */
+  .modular-bottom-banner .modular-banner-split {
+    display: flex !important;
+    flex-direction: column !important;
+    grid-template-columns: none !important;
+    min-height: auto !important;
+    height: auto !important;
+    overflow: visible !important;
   }
 
-  .modular-banner-right {
-    min-height: 768px; /* Doubled from 384px */
+  .modular-bottom-banner .modular-banner-left {
+    min-height: auto !important;
+    padding: 24px !important;
+    order: 1 !important;
+    background: rgba(113, 86, 36, 0.95) !important;
+    color: white !important;
+  }
+
+  .modular-bottom-banner .modular-banner-right {
+    min-height: 300px !important;
+    height: 300px !important;
+    order: 2 !important;
+    overflow: hidden !important;
+    margin: 0 -20px !important;
+    width: calc(100% + 40px) !important;
+  }
+
+  .modular-banner-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .modular-banner-content {
@@ -1382,6 +1444,14 @@
     margin-top: 0;
   }
 }
+
+/* Extra Small Mobile - Full Width Image */
+@media (max-width: 480px) {
+  .modular-bottom-banner .modular-banner-right {
+    margin: 0 -16px !important;
+    width: calc(100% + 32px) !important;
+  }
+}
 /* Extra Small Mobile Devices */
 @media (max-width: 480px) {
   .hero-split {
@@ -1391,7 +1461,7 @@
 
   .hero-split .hero-container {
     padding: 15px 16px 20px 16px;
-    gap: 25px;
+    gap: 5px;
     min-height: 85vh;
   }
 
@@ -1412,8 +1482,6 @@
 
   .hero-showcase-side {
     order: 1;
-    height: 300px;
-    margin-bottom: 10px;
   }
 
   .hero-badge {
@@ -1477,6 +1545,12 @@
     justify-content: center;
     font-weight: 700;
     border-radius: 12px;
+  }
+
+  /* Hide call and WhatsApp buttons on mobile */
+  .hero-cta-secondary,
+  .hero-cta-whatsapp {
+    display: none;
   }
 
   .hero-cta-primary {
@@ -1598,6 +1672,19 @@
     min-height: 200px;
   }
 
+  /* Modular Banner Split Mobile Styles - Consolidated */
+
+  .product-features {
+    gap: 6px;
+    margin-top: 12px;
+  }
+
+  .feature-tag {
+    padding: 3px 6px;
+    font-size: 10px;
+  }
+  }
+
   .collection-label {
     padding: 16px;
   }
@@ -1631,7 +1718,7 @@
   }
 
   .modular-banner {
-    height: 250px;
+    height: 350px;
     border-radius: 12px;
   }
 
@@ -1730,7 +1817,7 @@
     padding: 30px 0;
     margin-top: 0;
   }
-}
+
 
 
 /* Why Choose Wooden Furniture Section - Optimized */
@@ -2331,6 +2418,17 @@
 
 .modular-banner:hover .modular-banner-overlay {
   opacity: 1;
+}
+
+/* Mobile: Show overlay by default */
+@media (max-width: 768px) {
+  .modular-banner-overlay {
+    opacity: 1;
+  }
+  
+  .modular-banner:hover .modular-banner-overlay {
+    opacity: 1;
+  }
 }
 
 .modular-overlay-content {

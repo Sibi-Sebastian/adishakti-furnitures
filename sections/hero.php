@@ -67,15 +67,6 @@
                     </div>
                 <?php endforeach; ?>
             </div>
-
-            <!-- Floating Elements -->
-            <div class="floating-badge badge-1">
-                <span class="badge-icon">🏆</span>
-                <div>
-                    <div class="badge-title">Premium Quality</div>
-                    <div class="badge-subtitle">Certified Wood</div>
-                </div>
-            </div>
         </div>
     </div>
 </div>
