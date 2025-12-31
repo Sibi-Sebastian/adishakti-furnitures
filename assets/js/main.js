@@ -241,29 +241,33 @@ function toggleMobileMenu() {
 
 function openMobileMenu() {
     const mobileMenu = document.getElementById('mobileMenu');
+    const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
     const mobileMenuToggle = document.getElementById('mobileMenuToggle');
     
-    if (!mobileMenu || !mobileMenuToggle) {
+    if (!mobileMenu || !mobileMenuToggle || !mobileMenuOverlay) {
         return;
     }
 
     mobileMenu.classList.add('show');
+    mobileMenuOverlay.classList.add('show');
     mobileMenuToggle.setAttribute('aria-expanded', 'true');
     mobileMenuToggle.classList.add('active');
     
-    // Prevent body scroll
+    // Prevent body scroll when menu is open
     document.body.style.overflow = 'hidden';
 }
 
 function closeMobileMenu() {
     const mobileMenu = document.getElementById('mobileMenu');
+    const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
     const mobileMenuToggle = document.getElementById('mobileMenuToggle');
     
-    if (!mobileMenu || !mobileMenuToggle) {
+    if (!mobileMenu || !mobileMenuToggle || !mobileMenuOverlay) {
         return;
     }
 
     mobileMenu.classList.remove('show');
+    mobileMenuOverlay.classList.remove('show');
     mobileMenuToggle.setAttribute('aria-expanded', 'false');
     mobileMenuToggle.classList.remove('active');
     

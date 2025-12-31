@@ -464,55 +464,54 @@
 .mobile-menu {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
+  right: -100%; /* Start off-screen on the right */
+  width: 66.67%; /* One-third of the screen */
+  max-width: 320px; /* Maximum width for larger screens */
+  height: auto; /* Dynamic height based on content */
+  max-height: 100vh; /* Prevent menu from exceeding viewport height */
   background: white;
   z-index: 9999;
-  display: none;
-  overflow-y: auto;
+  overflow-y: auto; /* Enable scrolling when content exceeds max-height */
+  transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: -2px 0 20px rgba(0, 0, 0, 0.1); /* Shadow on the left side */
 }
 
 .mobile-menu.show {
-  display: block;
+  right: 0; /* Slide in from right */
+}
+
+/* Mobile Menu Overlay - for clicking outside to close */
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-overlay.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 .mobile-menu-content {
   padding: 0;
 }
 
-/* Mobile Menu Header */
-.mobile-menu-header {
-  display: flex;
-  justify-content: flex-start; /* Align logo to the left */
-  align-items: center;
-  padding: 20px 24px;
-  background: linear-gradient(135deg, var(--secondary-cream) 0%, var(--neutral-light) 100%);
-  border-bottom: 3px solid var(--primary-gold);
-  box-shadow: 0 2px 10px rgba(139, 69, 19, 0.1);
-}
-
-.mobile-menu-logo {
-  flex-shrink: 0;
-}
-
-.mobile-menu-logo-image {
-  height: 60px;
-  width: auto;
-  transition: opacity 0.3s;
-}
-
-.mobile-menu-logo:hover .mobile-menu-logo-image {
-  opacity: 0.85;
-}
-
-
-
 .mobile-nav-section,
 .mobile-categories,
 .mobile-actions {
   margin-bottom: 30px;
   padding: 0 24px;
+}
+
+.mobile-nav-section {
+  padding-top: 30px; /* Add top padding since we removed the header */
 }
 
 .mobile-nav-section h3,
@@ -524,7 +523,7 @@
   margin-bottom: 15px;
   padding-top: 8px;
   padding-bottom: 8px;
-  border-bottom: 2px solid #D4AF37;
+  border-bottom: 3px solid #D4AF37; /* Match navbar's gold border */
 }
 
 .mobile-nav-link,
@@ -702,6 +701,14 @@
   .navbar-search {
     display: none;
   }
+
+  /* Tablet menu adjustments - same as mobile but slightly wider */
+  .mobile-menu {
+    width: 60%; /* Slightly narrower on tablet for better proportions */
+    max-width: 350px;
+    height: auto; /* Auto height based on content */
+    max-height: 100vh; /* Prevent exceeding viewport */
+  }
 }
 
 /* Mobile - Hide action buttons, show floating buttons instead */
@@ -775,6 +782,14 @@
   .navbar-search {
     display: none;
   }
+
+  /* Mobile menu adjustments */
+  .mobile-menu {
+    width: 75%; /* Slightly wider on mobile for better usability */
+    max-width: 280px;
+    height: auto; /* Auto height based on content */
+    max-height: 100vh; /* Prevent exceeding viewport */
+  }
 }
 
 /* Small Mobile - Further optimization */
@@ -834,6 +849,14 @@
 
   .logo-image {
     height: 60px;
+  }
+
+  /* Small mobile menu adjustments */
+  .mobile-menu {
+    width: 80%; /* Even wider on small screens for better touch targets */
+    max-width: 260px;
+    height: auto; /* Auto height based on content */
+    max-height: 100vh; /* Prevent exceeding viewport */
   }
 }
 

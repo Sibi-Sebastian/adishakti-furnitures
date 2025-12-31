@@ -153,15 +153,9 @@
     </div>
 
     <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay" onclick="closeMobileMenu()"></div>
     <div class="mobile-menu" id="mobileMenu">
         <div class="mobile-menu-content">
-            <!-- Mobile Menu Header with Logo -->
-            <div class="mobile-menu-header">
-                <div class="mobile-menu-logo">
-                    <img src="assets/images/logo.png" alt="Adishakti Furnitures" class="mobile-menu-logo-image">
-                </div>
-            </div>
-            
             <!-- Mobile Navigation -->
             <div class="mobile-nav-section">
                 <h3>Navigation</h3>

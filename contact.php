@@ -112,20 +112,6 @@ $meta_keywords = 'contact Adishakti furnitures, furniture showroom Davanagere, f
                                     <small>Quick responses guaranteed</small>
                                 </div>
                             </div>
-
-                            <div class="contact-method">
-                                <div class="method-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <polyline points="12 6 12 12 16 14"></polyline>
-                                    </svg>
-                                </div>
-                                <div class="method-details">
-                                    <h3>Business Hours</h3>
-                                    <p>Monday - Saturday: 9:00 AM - 8:00 PM<br>
-                                    Sunday: 10:00 AM - 6:00 PM</p>
-                                </div>
-                            </div>
                         </div>
 
                         <div class="quick-actions">
