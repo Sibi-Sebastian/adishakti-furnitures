@@ -65,7 +65,7 @@ $meta_keywords = 'about Adishakti furnitures, wooden furniture company, handcraf
             <div class="container">
                 <div class="story-grid">
                     <div class="story-image">
-                        <img src="https://ii1.pepperfry.com/media/catalog/product/c/a/1600x1760/canedo-velvet-chaise-lounger-in-beige-colour-by-casacraft-canedo-velvet-chaise-lounger-in-beige-colo-zqhuzh.jpg" alt="Adishakti Furnitures Craftsmanship" loading="lazy">
+                        <img src="http://localhost/Tackle-D/December/adishakti-furnitures/assets/images/our-story.webp" alt="Adishakti Furnitures Craftsmanship" loading="lazy">
                     </div>
                     <div class="story-content">
                         <h2 class="section-title">Our Story</h2>
@@ -94,126 +94,45 @@ $meta_keywords = 'about Adishakti furnitures, wooden furniture company, handcraf
             </div>
         </div>
 
-        <!-- Our Values Section -->
-        <div class="values-section">
+        <!-- Why Trust Adishakti Section -->
+        <div class="trust-section">
             <div class="container">
-                <h2 class="section-title text-center">Our Values</h2>
+                <h2 class="section-title text-center">Why Trust Adishakti Furnitures?</h2>
                 <p class="section-subtitle text-center">
-                    The principles that guide everything we do
+                    Building lasting relationships through quality, reliability, and exceptional service
                 </p>
                 
-                <div class="values-grid">
-                    <div class="value-card">
-                        <div class="value-icon">
+                <div class="trust-grid">
+                    <div class="trust-card">
+                        <div class="trust-icon">
                             <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="trust-title">Premium Quality</h3>
+                        <p class="trust-description">We use only the finest materials and time-tested craftsmanship techniques to ensure every piece lasts for generations.</p>
+                    </div>
+
+                    <div class="trust-card">
+                        <div class="trust-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M9 12l2 2 4-4"></path>
+                                <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"></path>
+                                <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"></path>
                             </svg>
                         </div>
-                        <h3 class="value-title">Quality First</h3>
-                        <p class="value-description">
-                            We never compromise on quality. Every piece of furniture undergoes rigorous quality checks to ensure it meets our high standards and your expectations.
-                        </p>
+                        <h3 class="trust-title">Trusted Service</h3>
+                        <p class="trust-description">Years of satisfied customers and positive reviews reflect our commitment to excellence and customer satisfaction.</p>
                     </div>
 
-                    <div class="value-card">
-                        <div class="value-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="12" cy="7" r="4"></circle>
-                            </svg>
-                        </div>
-                        <h3 class="value-title">Customer Centric</h3>
-                        <p class="value-description">
-                            Your satisfaction is our priority. We listen to your needs, understand your vision, and work tirelessly to exceed your expectations with every interaction.
-                        </p>
-                    </div>
-
-                    <div class="value-card">
-                        <div class="value-icon">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="3"></circle>
-                                <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"></path>
-                            </svg>
-                        </div>
-                        <h3 class="value-title">Craftsmanship</h3>
-                        <p class="value-description">
-                            Our skilled artisans bring decades of experience to every piece. Traditional techniques combined with modern tools create furniture that's both beautiful and durable.
-                        </p>
-                    </div>
-
-                    <div class="value-card">
-                        <div class="value-icon">
+                    <div class="trust-card">
+                        <div class="trust-icon">
                             <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                             </svg>
                         </div>
-                        <h3 class="value-title">Innovation</h3>
-                        <p class="value-description">
-                            We continuously evolve our designs and processes, embracing new technologies while respecting traditional craftsmanship to create furniture for modern living.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Our Process Section -->
-        <div class="process-section">
-            <div class="container">
-                <h2 class="section-title text-center">Our Crafting Process</h2>
-                <p class="section-subtitle text-center">
-                    From concept to creation, every step is carefully executed
-                </p>
-                
-                <div class="process-timeline">
-                    <div class="process-step">
-                        <div class="step-number">01</div>
-                        <div class="step-content">
-                            <h3 class="step-title">Design & Planning</h3>
-                            <p class="step-description">
-                                Our designers work closely with you to understand your vision and create detailed plans that bring your ideas to life.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="process-step">
-                        <div class="step-number">02</div>
-                        <div class="step-content">
-                            <h3 class="step-title">Material Selection</h3>
-                            <p class="step-description">
-                                We carefully select premium quality wood and materials, ensuring each piece meets our strict standards for durability and beauty.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="process-step">
-                        <div class="step-number">03</div>
-                        <div class="step-content">
-                            <h3 class="step-title">Expert Crafting</h3>
-                            <p class="step-description">
-                                Our skilled artisans use time-tested techniques combined with modern tools to craft each piece with precision and care.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="process-step">
-                        <div class="step-number">04</div>
-                        <div class="step-content">
-                            <h3 class="step-title">Quality Assurance</h3>
-                            <p class="step-description">
-                                Every finished piece undergoes thorough quality checks to ensure it meets our high standards before reaching your home.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="process-step">
-                        <div class="step-number">05</div>
-                        <div class="step-content">
-                            <h3 class="step-title">Delivery & Setup</h3>
-                            <p class="step-description">
-                                We provide professional delivery and installation services to ensure your furniture is perfectly placed in your space.
-                            </p>
-                        </div>
+                        <h3 class="trust-title">Expert Guidance</h3>
+                        <p class="trust-description">Our experienced team provides personalized advice to help you choose furniture that perfectly fits your space and style.</p>
                     </div>
                 </div>
             </div>

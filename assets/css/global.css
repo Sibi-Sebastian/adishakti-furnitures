@@ -5,34 +5,34 @@
 }
 
 :root {
-  /* Primary Colors - Warm & Inviting */
-  --primary-wood: #8B4513;
-  --primary-gold: #D4AF37;
-  --primary-terracotta: #E07A5F;
-  --primary-sage: #81B29A;
+  /* Primary Colors - Light & Premium */
+  --primary-slate: #64748B;
+  --primary-blue: #3B82F6;
+  --primary-indigo: #6366F1;
+  --primary-emerald: #10B981;
   
-  /* Secondary Colors - Rich & Elegant */
-  --secondary-cream: #F4F1DE;
-  --secondary-beige: #E8DCC4;
-  --secondary-brown: #6B4423;
-  --secondary-olive: #A8A77A;
+  /* Secondary Colors - Soft & Elegant */
+  --secondary-pearl: #F8FAFC;
+  --secondary-cloud: #F1F5F9;
+  --secondary-mist: #E2E8F0;
+  --secondary-silver: #CBD5E1;
   
-  /* Accent Colors - Vibrant Touches */
-  --accent-coral: #F2A154;
-  --accent-teal: #3D5A80;
-  --accent-burgundy: #A63446;
-  --accent-mustard: #F4A261;
+  /* Accent Colors - Fresh Touches */
+  --accent-sky: #0EA5E9;
+  --accent-violet: #8B5CF6;
+  --accent-rose: #F43F5E;
+  --accent-amber: #F59E0B;
   
-  /* Neutral Colors */
-  --neutral-dark: #2C1810;
-  --neutral-medium: #5D4E37;
-  --neutral-light: #F5F5F0;
-  --neutral-white: #FFFEF9;
+  /* Neutral Colors - Clean & Modern */
+  --neutral-dark: #1E293B;
+  --neutral-medium: #475569;
+  --neutral-light: #F8FAFC;
+  --neutral-white: #FFFFFF;
   
-  /* Gradients */
-  --gradient-warm: linear-gradient(135deg, #F4A261 0%, #E07A5F 100%);
-  --gradient-earth: linear-gradient(135deg, #8B4513 0%, #D4AF37 100%);
-  --gradient-elegant: linear-gradient(135deg, #6B4423 0%, #A8A77A 100%);
+  /* Gradients - Premium & Fresh */
+  --gradient-warm: linear-gradient(135deg, #3B82F6 0%, #6366F1 100%);
+  --gradient-earth: linear-gradient(135deg, #10B981 0%, #0EA5E9 100%);
+  --gradient-elegant: linear-gradient(135deg, #64748B 0%, #8B5CF6 100%);
 }
 
 body {
@@ -97,13 +97,18 @@ img {
 @media (min-width: 1025px) {
   .back-to-top {
     position: fixed;
-    bottom: 30px;
+    bottom: 170px; /* Above floating buttons */
     right: max(30px, calc(50vw - 720px + 30px)); /* Stay within 1440px container or 30px from edge */
   }
   
   .back-to-top.show {
-    bottom: 30px;
+    bottom: 170px; /* Above floating buttons */
     right: max(30px, calc(50vw - 720px + 30px)); /* Keep within content boundaries */
+  }
+  
+  .floating-actions {
+    bottom: 30px;
+    right: max(30px, calc(50vw - 720px + 30px)); /* Align with content boundaries */
   }
 }
 
@@ -111,10 +116,17 @@ img {
 @media (min-width: 1025px) and (max-width: 1500px) {
   .back-to-top {
     right: 30px; /* Use viewport positioning on smaller screens */
+    bottom: 170px; /* Above floating buttons */
   }
   
   .back-to-top.show {
     right: 30px;
+    bottom: 170px; /* Above floating buttons */
+  }
+  
+  .floating-actions {
+    right: 30px;
+    bottom: 30px;
   }
 }
 
@@ -231,23 +243,21 @@ img {
   box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
 }
 
-/* Position back-to-top button in the same column - Mobile/Tablet only */
-@media (max-width: 1024px) {
-  .back-to-top.show {
-    bottom: 160px; /* Above the two floating buttons (56px + 16px + 56px + 16px + some margin) */
-    right: 30px;
-  }
+/* Position back-to-top button in the same column - All devices */
+.back-to-top.show {
+  bottom: 160px; /* Above the two floating buttons (56px + 16px + 56px + 16px + some margin) */
+  right: 30px;
 }
 
-/* Show floating buttons on tablet and mobile */
-@media (max-width: 1024px) {
+/* Show floating buttons on all devices */
+@media (min-width: 1px) {
   .floating-actions {
     display: flex;
   }
 }
 
-/* Tablet specific adjustments for floating buttons (769px to 1024px) */
-@media (max-width: 1024px) and (min-width: 769px) {
+/* Tablet specific adjustments for floating buttons (768px to 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
   .floating-actions {
     bottom: 40px;
     right: 40px;
@@ -272,7 +282,7 @@ img {
   }
 
   .back-to-top.show {
-    bottom: 192px; /* Ensure consistent positioning */
+    bottom: 192px;
     right: 40px;
   }
 
@@ -282,8 +292,8 @@ img {
   }
 }
 
-/* Medium tablet range (481px to 768px) - Fix overlap issue */
-@media (max-width: 768px) and (min-width: 481px) {
+/* Mobile range (481px to 767px) */
+@media (max-width: 767px) and (min-width: 481px) {
   .floating-actions {
     bottom: 30px;
     right: 30px;
@@ -291,7 +301,7 @@ img {
   }
 
   .back-to-top {
-    bottom: 170px; /* Above the two floating buttons with proper spacing */
+    bottom: 170px;
     right: 30px;
   }
 
@@ -397,10 +407,6 @@ img {
   }
 }
 /* Touch device specific styles */
-.touch-device {
-  /* Remove hover effects on touch devices */
-}
-
 .touch-device .product-card:hover,
 .touch-device .room-card:hover,
 .touch-device .collection-card:hover {
@@ -429,7 +435,7 @@ img {
 /* Shop What You Need Section - Professional Design */
 .shop-what-you-need-section {
   padding: 100px 0;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
   position: relative;
   overflow: hidden;
 }
@@ -473,7 +479,7 @@ img {
 }
 
 .shop-what-you-need-section .highlight-text {
-  background: linear-gradient(135deg, var(--primary-gold), #f4d03f);
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-indigo));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -511,7 +517,7 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, transparent 0%, rgba(212, 175, 55, 0.03) 100%);
+  background: linear-gradient(135deg, transparent 0%, rgba(59, 130, 246, 0.03) 100%);
   opacity: 0;
   transition: opacity 0.4s ease;
   z-index: 1;
@@ -527,19 +533,19 @@ img {
 }
 
 .shop-card[data-category="living"]:hover {
-  box-shadow: 0 20px 48px rgba(139, 69, 19, 0.15);
+  box-shadow: 0 20px 48px rgba(59, 130, 246, 0.15);
 }
 
 .shop-card[data-category="sleep"]:hover {
-  box-shadow: 0 20px 48px rgba(129, 178, 154, 0.15);
+  box-shadow: 0 20px 48px rgba(16, 185, 129, 0.15);
 }
 
 .shop-card[data-category="dining"]:hover {
-  box-shadow: 0 20px 48px rgba(224, 122, 95, 0.15);
+  box-shadow: 0 20px 48px rgba(99, 102, 241, 0.15);
 }
 
 .shop-card[data-category="decor"]:hover {
-  box-shadow: 0 20px 48px rgba(212, 175, 55, 0.15);
+  box-shadow: 0 20px 48px rgba(139, 92, 246, 0.15);
 }
 
 /* Content Above Image - More Professional */
@@ -558,13 +564,13 @@ img {
 .category-icon {
   width: 44px;
   height: 44px;
-  background: linear-gradient(135deg, var(--primary-gold), #f4d03f);
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-indigo));
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.25);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
   flex-shrink: 0;
 }
 
@@ -663,11 +669,11 @@ img {
 }
 
 .shop-card:hover .shop-cta-btn {
-  background: var(--primary-gold);
+  background: var(--primary-blue);
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.4);
-  border-color: var(--primary-gold);
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.4);
+  border-color: var(--primary-blue);
 }
 
 .shop-cta-btn svg {

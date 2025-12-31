@@ -913,3 +913,66 @@
     padding: 8px 14px;
   }
 }
+/* Google Reviews Widget Styling */
+.google-reviews-widget {
+  padding: 40px;
+  background: rgba(255, 254, 249, 0.3);
+  border-radius: 20px;
+  border: 2px solid rgba(212, 175, 55, 0.1);
+}
+
+.testimonials-subtitle {
+  font-size: 18px;
+  color: var(--neutral-medium);
+  margin-top: 16px;
+  font-weight: 400;
+}
+
+.additional-reviews {
+  margin-top: 80px;
+}
+
+.additional-reviews-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--neutral-dark);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Elfsight Widget Customization */
+.elfsight-app-a1332e3e-4729-4619-a26e-db33f2bc395f {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Responsive Design for Widget */
+@media (max-width: 768px) {
+  .google-reviews-widget {
+    margin: 40px 0;
+    padding: 30px 20px;
+  }
+  
+  .additional-reviews {
+    margin-top: 60px;
+  }
+  
+  .additional-reviews-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .google-reviews-widget {
+    margin: 30px 0;
+    padding: 20px 15px;
+  }
+  
+  .testimonials-subtitle {
+    font-size: 16px;
+  }
+  
+  .additional-reviews-title {
+    font-size: 22px;
+  }
+}

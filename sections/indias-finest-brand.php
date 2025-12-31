@@ -17,7 +17,7 @@
                     <p class="category-subtitle">Furniture</p>
                 </div>
             </div>
-            <img src="https://ii1.pepperfry.com/media/catalog/product/c/a/1600x1760/canedo-velvet-chaise-lounger-in-beige-colour-by-casacraft-canedo-velvet-chaise-lounger-in-beige-colo-zqhuzh.jpg" alt="Dining Room Furniture" loading="lazy">
+            <img src="http://localhost/Tackle-D/December/adishakti-furnitures/assets/images/india-dining-room.webp" alt="Dining Room Furniture" loading="lazy">
         </a>
 
         <!-- Bedroom Card -->
@@ -28,7 +28,7 @@
                     <p class="category-subtitle">Furniture</p>
                 </div>
             </div>
-            <img src="https://ii1.pepperfry.com/media/catalog/product/w/h/1100x1210/white-abstract-220-tc-microfiber-king-size-fitted-bedsheet-with-2-pillow-covers-white-abstract-220-t-8rkzv4.jpg" alt="Bedroom Furniture" loading="lazy">
+            <img src="http://localhost/Tackle-D/December/adishakti-furnitures/assets/images/india-bed-room.webp" alt="Bedroom Furniture" loading="lazy">
         </a>
 
         <!-- Living Room Card -->
@@ -39,7 +39,7 @@
                     <p class="category-subtitle">Furniture</p>
                 </div>
             </div>
-            <img src="https://ii1.pepperfry.com/media/catalog/product/c/a/1600x1760/canedo-velvet-chaise-lounger-in-beige-colour-by-casacraft-canedo-velvet-chaise-lounger-in-beige-colo-zqhuzh.jpg" alt="Living Room Furniture" loading="lazy">
+            <img src="http://localhost/Tackle-D/December/adishakti-furnitures/assets/images/india-living-room.webp" alt="Living Room Furniture" loading="lazy">
         </a>
 
         <!-- Row 2 -->
@@ -51,7 +51,7 @@
                     <p class="category-subtitle">Furniture</p>
                 </div>
             </div>
-            <img src="https://ii1.pepperfry.com/media/catalog/product/c/a/1600x1760/canedo-velvet-chaise-lounger-in-beige-colour-by-casacraft-canedo-velvet-chaise-lounger-in-beige-colo-zqhuzh.jpg" alt="Study Furniture" loading="lazy">
+            <img src="http://localhost/Tackle-D/December/adishakti-furnitures/assets/images/india-study-room.webp" alt="Study Furniture" loading="lazy">
         </a>
 
         <!-- Outdoor Card -->
@@ -62,7 +62,7 @@
                     <p class="category-subtitle">Furniture</p>
                 </div>
             </div>
-            <img src="https://ii1.pepperfry.com/media/catalog/product/c/a/1600x1760/canedo-velvet-chaise-lounger-in-beige-colour-by-casacraft-canedo-velvet-chaise-lounger-in-beige-colo-zqhuzh.jpg" alt="Outdoor Furniture" loading="lazy">
+            <img src="http://localhost/Tackle-D/December/adishakti-furnitures/assets/images/india-dining-room.webp" alt="Outdoor Furniture" loading="lazy">
         </a>
         
         <!-- More Collections Card -->
@@ -79,7 +79,7 @@
                     </div>
                 </div>
             </div>
-            <img src="https://ii1.pepperfry.com/media/catalog/product/c/a/1600x1760/canedo-velvet-chaise-lounger-in-beige-colour-by-casacraft-canedo-velvet-chaise-lounger-in-beige-colo-zqhuzh.jpg" alt="More Collections" loading="lazy">
+            <img src="http://localhost/Tackle-D/December/adishakti-furnitures/assets/images/india-more.webp" alt="More Collections" loading="lazy">
         </a>
     </div>
 </div>

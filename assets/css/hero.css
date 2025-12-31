@@ -859,6 +859,17 @@
   min-height: 290px;
 }
 
+/* Style the more-card to fit within collection grid */
+.collection-cards-right .brand-category-card {
+  height: auto;
+  min-height: 290px;
+  border-radius: 16px;
+}
+
+.collection-cards-right .brand-category-card img {
+  min-height: 290px;
+}
+
 /* Modular Section - Optimized */
 .modular-section {
   padding: 10px 0;
@@ -872,6 +883,11 @@
   grid-template-columns: 1fr 1fr;
   gap: 24px;
   margin-bottom: 24px;
+}
+
+.modular-bottom-banner {
+  grid-column: 1 / -1;
+  margin-top: 32px;
 }
 
 .modular-banner {
@@ -902,58 +918,81 @@
 .modular-banner-content {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%);
+  background: rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   padding: 40px;
   color: white;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.modular-banner:hover .modular-banner-content {
+  opacity: 1;
 }
 
 .modular-badge {
   display: inline-block;
-  padding: 8px 16px;
-  background: var(--gradient-warm);
+  padding: 6px 12px;
+  background: transparent;
   color: white;
   font-size: 14px;
-  font-weight: 700;
-  border-radius: 8px;
-  margin-bottom: 20px;
+  font-weight: 600;
+  border-radius: 6px;
+  margin-bottom: 12px;
   width: fit-content;
-  box-shadow: 0 4px 12px rgba(224, 122, 95, 0.3);
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  transform: translateY(20px);
+  transition: all 0.4s ease 0.1s;
+}
+
+.modular-banner:hover .modular-badge {
+  transform: translateY(0);
 }
 
 .modular-title {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 700;
-  margin-bottom: 24px;
-  line-height: 1.2;
+  margin-bottom: 8px;
+  line-height: 1.3;
   max-width: 400px;
+  transform: translateY(20px);
+  transition: all 0.4s ease 0.2s;
+}
+
+.modular-banner:hover .modular-title {
+  transform: translateY(0);
 }
 
 .modular-cta {
-  padding: 14px 32px;
-  background: var(--gradient-warm);
+  padding: 12px 24px;
+  background: transparent;
   color: white;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  border-radius: 50px;
-  font-size: 16px;
+  border: 2px solid white;
+  border-radius: 25px;
+  font-size: 14px;
   font-weight: 600;
   cursor: pointer;
   width: fit-content;
-  transition: all 0.3s;
+  transition: all 0.4s ease 0.3s;
   display: flex;
   align-items: center;
   gap: 8px;
-  box-shadow: 0 4px 12px rgba(224, 122, 95, 0.3);
   text-decoration: none;
+  margin-top: auto;
+  transform: translateY(20px);
+}
+
+.modular-banner:hover .modular-cta {
+  transform: translateY(0);
+}
 }
 
 .modular-cta:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 12px 32px rgba(212, 175, 55, 0.4);
-  background: var(--gradient-earth);
+  transform: translateY(-2px);
+  background: white;
+  color: var(--neutral-dark);
+  border-color: white;
 }
 
 .modular-bottom-banner {
@@ -1352,6 +1391,14 @@
     min-height: 250px;
   }
 
+  .collection-cards-right .brand-category-card {
+    min-height: 250px;
+  }
+
+  .collection-cards-right .brand-category-card img {
+    min-height: 250px;
+  }
+
   .featured-banner {
     height: 350px;
   }
@@ -1672,6 +1719,14 @@
     min-height: 200px;
   }
 
+  .collection-cards-right .brand-category-card {
+    min-height: 200px;
+  }
+
+  .collection-cards-right .brand-category-card img {
+    min-height: 200px;
+  }
+
   /* Modular Banner Split Mobile Styles - Consolidated */
 
   .product-features {
@@ -1823,20 +1878,34 @@
 /* Why Choose Wooden Furniture Section - Optimized */
 .why-wooden-section {
   background: #FFFFFF;
-  padding: 40px 0;
+  padding: 60px 0;
   position: relative;
-  border-bottom: 4px solid var(--primary-gold);
+  border-top: 1px solid rgba(226, 232, 240, 0.6);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
 }
 
 .why-wooden-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
+  align-items: stretch;
+}
+
+/* Content and Image Wrappers - Equal Height */
+.content-wrapper,
+.image-wrapper {
+  height: 600px;
+  display: flex;
   align-items: center;
 }
 
+.content-wrapper {
+  padding-left: 40px;
+}
+
 .why-wooden-content {
-  padding-right: 40px;
+  width: 100%;
 }
 
 .benefits-list {
@@ -1890,13 +1959,14 @@
   overflow: hidden;
   box-shadow: 0 20px 60px rgba(15, 23, 42, 0.15);
   border: 3px solid var(--secondary-beige);
+  width: 100%;
+  height: 100%;
 }
 
 .why-wooden-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  min-height: 500px;
   transition: transform 0.4s;
 }
 
@@ -2130,12 +2200,17 @@
     gap: 40px;
   }
 
-  .why-wooden-content {
+  .content-wrapper,
+  .image-wrapper {
+    height: auto;
+  }
+
+  .content-wrapper {
     padding-right: 0;
   }
 
   .why-wooden-image img {
-    min-height: 400px;
+    min-height: auto;
   }
 
   .difference-grid {
@@ -2161,7 +2236,7 @@
 @media (max-width: 768px) {
   .why-wooden-section,
   .adishakti-excellence-section {
-    padding: 50px 0;
+    padding: 60px 0;
   }
 
   .excellence-content {
@@ -2196,7 +2271,7 @@
   }
 
   .why-wooden-image img {
-    min-height: 300px;
+    min-height: auto;
   }
 
   .difference-card {
@@ -2245,7 +2320,7 @@
 @media (max-width: 480px) {
   .why-wooden-section,
   .adishakti-excellence-section {
-    padding: 40px 0;
+    padding: 48px 0;
   }
 
   .excellence-content {
@@ -2291,12 +2366,17 @@
     font-size: 13px;
   }
 
+  .content-wrapper,
+  .image-wrapper {
+    height: auto;
+  }
+
   .why-wooden-image {
     border-radius: 12px;
   }
 
   .why-wooden-image img {
-    min-height: 250px;
+    min-height: auto;
   }
 
   .difference-card {
@@ -2408,7 +2488,7 @@
 .modular-banner-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.05) 100%);
   display: flex;
   align-items: flex-end;
   padding: 32px;
