@@ -5,7 +5,7 @@
         <p class="section-subtitle">Thoughtfully designed modular furniture crafted with precision, premium materials, and a passion for beautiful living.</p>
         <div class="collection-grid">
             <a href="gallery.php" class="collection-card collection-large">
-                <img src="http://localhost/Tackle-D/December/adishakti-furnitures/assets/images/premium-dining.webp" alt="Astra Collection" loading="lazy">
+                <img src="assets/images/premium-dining.webp" alt="Astra Collection" loading="lazy">
                 <div class="collection-label">
                     <div class="label-content">
                         <span class="collection-badge">NEW</span>
@@ -24,15 +24,15 @@
                 $rooms = [
                     'Living Room' => [
                         'category' => 'Living Room',
-                        'image' => 'http://localhost/Tackle-D/December/adishakti-furnitures/assets/images/carousal-image-living-room.webp'
+                        'image' => 'assets/images/carousal-image-living-room.webp'
                     ],
                     'Dining Room' => [
                         'category' => 'Dining',
-                        'image' => 'http://localhost/Tackle-D/December/adishakti-furnitures/assets/images/carousal-image-dining-room.webp'
+                        'image' => 'assets/images/carousal-image-dining-room.webp'
                     ],
                     'Bedroom' => [
                         'category' => 'Bedroom',
-                        'image' => 'http://localhost/Tackle-D/December/adishakti-furnitures/assets/images/carousal-image-bedroom.webp'
+                        'image' => 'assets/images/carousal-image-bedroom.webp'
                     ]
                 ];
                 foreach ($rooms as $room_name => $room_data): 
@@ -60,7 +60,7 @@
                             </div>
                         </div>
                     </div>
-                    <img src="http://localhost/Tackle-D/December/adishakti-furnitures/assets/images/why-choose-us.webp" alt="More Collections" loading="lazy">
+                    <img src="assets/images/why-choose-us.webp" alt="More Collections" loading="lazy">
                 </a>
             </div>
         </div>

@@ -17,7 +17,7 @@
                     <p class="category-subtitle">Furniture</p>
                 </div>
             </div>
-            <img src="http://localhost/Tackle-D/December/adishakti-furnitures/assets/images/india-dining-room.webp" alt="Dining Room Furniture" loading="lazy">
+            <img src="assets/images/india-dining-room.webp" alt="Dining Room Furniture" loading="lazy">
         </a>
 
         <!-- Bedroom Card -->
@@ -28,7 +28,7 @@
                     <p class="category-subtitle">Furniture</p>
                 </div>
             </div>
-            <img src="http://localhost/Tackle-D/December/adishakti-furnitures/assets/images/india-bed-room.webp" alt="Bedroom Furniture" loading="lazy">
+            <img src="assets/images/india-bed-room.webp" alt="Bedroom Furniture" loading="lazy">
         </a>
 
         <!-- Living Room Card -->
@@ -39,7 +39,7 @@
                     <p class="category-subtitle">Furniture</p>
                 </div>
             </div>
-            <img src="http://localhost/Tackle-D/December/adishakti-furnitures/assets/images/india-living-room.webp" alt="Living Room Furniture" loading="lazy">
+            <img src="assets/images/india-living-room.webp" alt="Living Room Furniture" loading="lazy">
         </a>
 
         <!-- Row 2 -->
@@ -51,7 +51,7 @@
                     <p class="category-subtitle">Furniture</p>
                 </div>
             </div>
-            <img src="http://localhost/Tackle-D/December/adishakti-furnitures/assets/images/india-study-room.webp" alt="Study Furniture" loading="lazy">
+            <img src="assets/images/india-study-room.webp" alt="Study Furniture" loading="lazy">
         </a>
 
         <!-- Outdoor Card -->
@@ -62,7 +62,7 @@
                     <p class="category-subtitle">Furniture</p>
                 </div>
             </div>
-            <img src="http://localhost/Tackle-D/December/adishakti-furnitures/assets/images/india-dining-room.webp" alt="Outdoor Furniture" loading="lazy">
+            <img src="assets/images/india-dining-room.webp" alt="Outdoor Furniture" loading="lazy">
         </a>
         
         <!-- More Collections Card -->
@@ -79,7 +79,7 @@
                     </div>
                 </div>
             </div>
-            <img src="http://localhost/Tackle-D/December/adishakti-furnitures/assets/images/india-more.webp" alt="More Collections" loading="lazy">
+            <img src="assets/images/india-more.webp" alt="More Collections" loading="lazy">
         </a>
     </div>
 </div>

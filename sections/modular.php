@@ -6,7 +6,7 @@
         <div class="modular-grid">
             
             <div class="modular-banner modular-large">
-                <img src="http://localhost/Tackle-D/December/adishakti-furnitures/assets/images/premium-collection-sofa.webp" alt="Premium Modular Furniture" loading="lazy">
+                <img src="assets/images/premium-collection-sofa.webp" alt="Premium Modular Furniture" loading="lazy">
                 <div class="modular-banner-content">
                     <h3 class="modular-title">Transform Your Interiors with Excellence</h3>
                     <p class="modular-description">Engineered wood with laminate finish, soft-close hinges, and customizable configurations</p>
@@ -16,7 +16,7 @@
 
             <div class="modular-banner modular-large">
                 <a href="gallery.php?category=Bedroom" class="modular-banner modular-large">
-                <img src="http://localhost/Tackle-D/December/adishakti-furnitures/assets/images/premium-dining.webp" alt="Bedroom Collection" loading="lazy">
+                <img src="assets/images/premium-dining.webp" alt="Bedroom Collection" loading="lazy">
 
                 <div class="modular-banner-content">
                     <div class="modular-banner-content">
@@ -40,7 +40,7 @@
                         </div>
                     </div>
                     <div class="modular-banner-right" style="min-height: 768px;">
-                        <img src="http://localhost/Tackle-D/December/adishakti-furnitures/assets/images/premium-tv.webp" alt="Linnea TV Unit" loading="lazy">
+                        <img src="assets/images/premium-tv.webp" alt="Linnea TV Unit" loading="lazy">
                     </div>
                 </div>
             </a>

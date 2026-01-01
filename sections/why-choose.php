@@ -4,7 +4,7 @@
         <div class="why-wooden-grid">
             <div class="image-wrapper">
                 <div class="why-wooden-image">
-                    <img src="http://localhost/Tackle-D/December/adishakti-furnitures/assets/images/why-choose-us.webp" alt="Beautiful wooden furniture showcase" loading="lazy">
+                    <img src="assets/images/why-choose-us.webp" alt="Beautiful wooden furniture showcase" loading="lazy">
                 </div>
             </div>
             <div class="content-wrapper">

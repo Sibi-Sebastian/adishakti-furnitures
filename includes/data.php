@@ -217,18 +217,18 @@ function getFeaturedProducts() {
     return [
         [
             'name' => 'Modern Living Collection',
-            'image' => 'http://localhost/Tackle-D/December/adishakti-furnitures/assets/images/carousal-image-living-room.webp',
+            'image' => 'assets/images/carousal-image-living-room.webp',
 
             'description' => 'Elegant comfort for your space'
         ],
         [
             'name' => 'Luxury Bedroom Sets',
-            'image' => 'http://localhost/Tackle-D/December/adishakti-furnitures/assets/images/carousal-image-bedroom.webp',
+            'image' => 'assets/images/carousal-image-bedroom.webp',
             'description' => 'Where dreams meet design'
         ],
         [
             'name' => 'Dining Excellence',
-            'image' => 'http://localhost/Tackle-D/December/adishakti-furnitures/assets/images/carousal-image-dining-room.webp',
+            'image' => 'assets/images/carousal-image-dining-room.webp',
             'description' => 'Gather in style'
         ]
     ];
