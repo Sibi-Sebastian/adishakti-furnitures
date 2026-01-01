@@ -286,7 +286,7 @@
   }
 
   .section-subtitle {
-    font-size: 16px;
+    font-size: 17.6px; /* 16px + 10% for mobile */
     margin-bottom: 40px;
   }
 
@@ -309,6 +309,15 @@
   .product-tooltip {
     display: none; /* Hide tooltips on mobile for better UX */
   }
+
+  /* Mobile tooltip styles for when they are shown */
+  .tooltip-description {
+    font-size: 15.4px; /* 14px + 10% for mobile */
+  }
+
+  .tooltip-detail {
+    font-size: 14.3px; /* 13px + 10% for mobile */
+  }
 }
 
 @media (max-width: 480px) {
@@ -322,7 +331,7 @@
   }
 
   .section-subtitle {
-    font-size: 14px;
+    font-size: 15.4px; /* 14px + 10% for mobile */
     margin-bottom: 30px;
   }
 
@@ -345,5 +354,14 @@
   .view-all-btn {
     padding: 14px 28px;
     font-size: 14px;
+  }
+
+  /* Mobile tooltip styles for when they are shown */
+  .tooltip-description {
+    font-size: 14.3px; /* 13px + 10% for mobile */
+  }
+
+  .tooltip-detail {
+    font-size: 13.2px; /* 12px + 10% for mobile */
   }
 }

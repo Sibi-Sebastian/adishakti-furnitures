@@ -290,7 +290,7 @@
                     <ol>
                         <li><strong>Direct Contact:</strong> Call us at +91 99866 42973 or email adishakthifurnitures@gmail.com</li>
                         <li><strong>WhatsApp:</strong> Send a message to +91 99866 42973 with your complaint details</li>
-                        <li><strong>In-Person:</strong> Visit our showroom at SS Layout, Ring Road, Davangere</li>
+                        <li><strong>In-Person:</strong> Visit our showroom at Adishakthi Furnitures, Ring Rd, beside Navodaya Vidya Samsthe, SS Layout, Davanagere, Karnataka 577004</li>
                     </ol>
                     
                     <h3>Information to Include</h3>
@@ -315,7 +315,7 @@
                         <p><strong>Name:</strong> Customer Care Team</p>
                         <p><strong>Phone:</strong> +91 99866 42973</p>
                         <p><strong>Email:</strong> adishakthifurnitures@gmail.com</p>
-                        <p><strong>Address:</strong> SS Layout, Ring Road, Davangere</p>
+                        <p><strong>Address:</strong> Adishakthi Furnitures, Ring Rd, beside Navodaya Vidya Samsthe, SS Layout, Davanagere, Karnataka 577004</p>
                         <p><strong>Working Hours:</strong> Monday to Saturday, 9:00 AM to 7:00 PM</p>
                     </div>
                 </div>

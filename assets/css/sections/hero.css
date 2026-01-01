@@ -320,7 +320,7 @@
   }
 
   .hero-description {
-    font-size: 16px;
+    font-size: 17.6px; /* 16px + 10% for mobile */
   }
 
   .hero-stats {

@@ -79,7 +79,7 @@
                         </div>
                         <div class="contact-details">
                             <span class="contact-label">Visit Our Showroom</span>
-                            <span class="contact-value">SS Layout, Ring Road, Davangere, Karnataka</span>
+                            <span class="contact-value">Adishakthi Furnitures, Ring Rd, beside Navodaya Vidya Samsthe, SS Layout, Davanagere, Karnataka 577004</span>
                         </div>
                     </div>
                     

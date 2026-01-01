@@ -928,8 +928,55 @@
   transition: all 0.4s ease;
 }
 
-.modular-banner:hover .modular-banner-content {
-  opacity: 1;
+/* Desktop hover behavior */
+@media (min-width: 1025px) {
+  .modular-banner:hover .modular-banner-content {
+    opacity: 1;
+  }
+}
+
+/* Mobile/Tablet tap behavior */
+@media (max-width: 1024px) {
+  .modular-banner-content {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .modular-banner.mobile-active .modular-banner-content {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .modular-banner.mobile-active .modular-banner-content .modular-cta {
+    pointer-events: all;
+    cursor: pointer;
+  }
+  
+  /* Add tap indicator for mobile */
+  .modular-banner::after {
+    content: '👆 Tap to explore';
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--neutral-dark);
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0.8;
+    animation: pulse 2s infinite;
+    z-index: 5;
+  }
+  
+  .modular-banner.mobile-active::after {
+    display: none;
+  }
+  
+  @keyframes pulse {
+    0%, 100% { opacity: 0.8; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.05); }
+  }
 }
 
 .modular-badge {
@@ -946,8 +993,18 @@
   transition: all 0.4s ease 0.1s;
 }
 
-.modular-banner:hover .modular-badge {
-  transform: translateY(0);
+/* Desktop hover behavior */
+@media (min-width: 1025px) {
+  .modular-banner:hover .modular-badge {
+    transform: translateY(0);
+  }
+}
+
+/* Mobile/Tablet tap behavior */
+@media (max-width: 1024px) {
+  .modular-banner.mobile-active .modular-badge {
+    transform: translateY(0);
+  }
 }
 
 .modular-title {
@@ -960,8 +1017,18 @@
   transition: all 0.4s ease 0.2s;
 }
 
-.modular-banner:hover .modular-title {
-  transform: translateY(0);
+/* Desktop hover behavior */
+@media (min-width: 1025px) {
+  .modular-banner:hover .modular-title {
+    transform: translateY(0);
+  }
+}
+
+/* Mobile/Tablet tap behavior */
+@media (max-width: 1024px) {
+  .modular-banner.mobile-active .modular-title {
+    transform: translateY(0);
+  }
 }
 
 .modular-cta {
@@ -983,9 +1050,18 @@
   transform: translateY(20px);
 }
 
-.modular-banner:hover .modular-cta {
-  transform: translateY(0);
+/* Desktop hover behavior */
+@media (min-width: 1025px) {
+  .modular-banner:hover .modular-cta {
+    transform: translateY(0);
+  }
 }
+
+/* Mobile/Tablet tap behavior */
+@media (max-width: 1024px) {
+  .modular-banner.mobile-active .modular-cta {
+    transform: translateY(0);
+  }
 }
 
 .modular-cta:hover {
@@ -993,6 +1069,32 @@
   background: white;
   color: var(--neutral-dark);
   border-color: white;
+}
+
+.modular-cta-button {
+  padding: 12px 24px;
+  background: var(--accent-coral);
+  color: white;
+  border: 2px solid var(--accent-coral);
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  margin-top: 16px;
+}
+
+.modular-cta-button:hover {
+  transform: translateY(-2px);
+  background: white;
+  color: var(--accent-coral);
+  border-color: var(--accent-coral);
+  box-shadow: 0 4px 12px rgba(224, 122, 95, 0.3);
 }
 
 .modular-bottom-banner {
@@ -1381,6 +1483,31 @@
   .room-name {
     padding: 12px;
     font-size: 12px;
+  }
+
+  /* Mobile paragraph font size increases - 10% more */
+  .hero-description {
+    font-size: 17.6px; /* 16px + 10% */
+  }
+
+  .section-subtitle {
+    font-size: 19.8px; /* 18px + 10% */
+  }
+
+  .section-description {
+    font-size: 17.6px; /* 16px + 10% */
+  }
+
+  .modular-product-description {
+    font-size: 17.6px; /* 16px + 10% */
+  }
+
+  .banner-description {
+    font-size: 19.8px; /* 18px + 10% */
+  }
+
+  .showcase-overlay p {
+    font-size: 17.6px; /* 16px + 10% */
   }
 
   .collection-cards-right {
@@ -1799,6 +1926,12 @@
   .modular-cta {
     padding: 10px 16px;
     font-size: 12px;
+  }
+  
+  .modular-cta-button {
+    padding: 10px 16px;
+    font-size: 12px;
+    margin-top: 12px;
   }
 
   .view-all-btn {
@@ -2267,7 +2400,7 @@
   }
 
   .benefit-text p {
-    font-size: 14px;
+    font-size: 15.4px; /* 14px + 10% for mobile */
   }
 
   .why-wooden-image img {
@@ -2287,15 +2420,15 @@
   }
 
   .difference-content p {
-    font-size: 14px;
+    font-size: 15.4px; /* 14px + 10% for mobile */
   }
 
   .lifestyle-description {
-    font-size: 15px;
+    font-size: 16.5px; /* 15px + 10% for mobile */
   }
 
   .lifestyle-benefit {
-    font-size: 14px;
+    font-size: 15.4px; /* 14px + 10% for mobile */
     padding: 12px 16px;
   }
 
@@ -2339,7 +2472,7 @@
   }
 
   .section-subtitle {
-    font-size: 14px;
+    font-size: 15.4px; /* 14px + 10% for mobile */
     margin-bottom: 32px;
   }
 
@@ -2363,7 +2496,7 @@
   }
 
   .benefit-text p {
-    font-size: 13px;
+    font-size: 14.3px; /* 13px + 10% for mobile */
   }
 
   .content-wrapper,
@@ -2395,16 +2528,16 @@
   }
 
   .difference-content p {
-    font-size: 13px;
+    font-size: 14.3px; /* 13px + 10% for mobile */
   }
 
   .lifestyle-description {
-    font-size: 14px;
+    font-size: 15.4px; /* 14px + 10% for mobile */
     margin-bottom: 24px;
   }
 
   .lifestyle-benefit {
-    font-size: 13px;
+    font-size: 14.3px; /* 13px + 10% for mobile */
     padding: 12px 16px;
   }
 
@@ -2562,7 +2695,7 @@
 /* Responsive Enhancements */
 @media (max-width: 768px) {
   .collection-description {
-    font-size: 12px;
+    font-size: 13.2px; /* 12px + 10% for mobile */
     margin-top: 6px;
   }
 
@@ -2614,7 +2747,7 @@
 
 @media (max-width: 480px) {
   .collection-description {
-    font-size: 11px;
+    font-size: 12.1px; /* 11px + 10% for mobile */
     margin-top: 4px;
   }
 

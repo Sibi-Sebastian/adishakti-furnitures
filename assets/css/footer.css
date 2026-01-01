@@ -242,10 +242,37 @@
   
   .footer-brand-description {
     text-align: center;
+    font-size: 16px;
   }
   
   .footer-social {
     justify-content: center;
+  }
+  
+  /* Increase font sizes by 15% for tablet */
+  .footer-brand-name {
+    font-size: 23px;
+  }
+  
+  .footer-title {
+    font-size: 18px;
+  }
+  
+  .footer-links a {
+    font-size: 16px;
+  }
+  
+  .contact-label {
+    font-size: 13px;
+  }
+  
+  .contact-value {
+    font-size: 15px;
+  }
+  
+  .footer-copyright p,
+  .footer-credit p {
+    font-size: 15px;
   }
 }
 
@@ -271,6 +298,33 @@
   
   .footer-brand-description {
     text-align: center;
+    font-size: 16px;
+  }
+  
+  /* Maintain increased font sizes for mobile */
+  .footer-brand-name {
+    font-size: 23px;
+  }
+  
+  .footer-title {
+    font-size: 18px;
+  }
+  
+  .footer-links a {
+    font-size: 16px;
+  }
+  
+  .contact-label {
+    font-size: 13px;
+  }
+  
+  .contact-value {
+    font-size: 15px;
+  }
+  
+  .footer-copyright p,
+  .footer-credit p {
+    font-size: 15px;
   }
 }
 
@@ -292,11 +346,11 @@
   }
   
   .footer-brand-name {
-    font-size: 18px;
+    font-size: 21px;
   }
   
   .footer-brand-description {
-    font-size: 13px;
+    font-size: 15px;
   }
   
   .footer-social a {
@@ -305,7 +359,7 @@
   }
   
   .footer-title {
-    font-size: 15px;
+    font-size: 17px;
     text-align: center;
   }
   
@@ -316,6 +370,10 @@
   
   .footer-links {
     text-align: center;
+  }
+  
+  .footer-links a {
+    font-size: 16px;
   }
   
   .footer-contact {
@@ -344,12 +402,17 @@
   }
   
   .contact-label {
-    font-size: 11px;
+    font-size: 13px;
   }
   
   .contact-value {
-    font-size: 13px;
+    font-size: 15px;
     word-break: break-word;
+  }
+  
+  .footer-copyright p,
+  .footer-credit p {
+    font-size: 15px;
   }
 }
 

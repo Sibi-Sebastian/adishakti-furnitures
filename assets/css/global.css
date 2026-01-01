@@ -743,7 +743,7 @@ img {
   }
   
   .section-subtitle {
-    font-size: 1.1rem;
+    font-size: 1.21rem; /* 1.1rem + 10% for mobile */
   }
   
   .shop-grid {
@@ -767,7 +767,7 @@ img {
   }
   
   .shop-card-description {
-    font-size: 0.85rem;
+    font-size: 0.935rem; /* 0.85rem + 10% for mobile */
   }
   
   .shop-card-image {
@@ -802,7 +802,7 @@ img {
   }
   
   .shop-card-description {
-    font-size: 0.8rem;
+    font-size: 0.88rem; /* 0.8rem + 10% for mobile */
   }
   
   .shop-card-image {

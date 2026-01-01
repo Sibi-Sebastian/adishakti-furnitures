@@ -1,7 +1,7 @@
 <?php
 $title = 'Contact Us - Adishakti Furnitures | Get in Touch';
-$meta_description = 'Contact Adishakti Furnitures for all your furniture needs. Visit our showroom in Davanagere or reach out via phone, WhatsApp, or email for personalized assistance.';
-$meta_keywords = 'contact Adishakti furnitures, furniture showroom Davanagere, furniture store contact, wooden furniture enquiry';
+$meta_description = 'Contact Adishakti Furnitures for all your furniture needs. Visit our showroom at Ring Rd, beside Navodaya Vidya Samsthe, SS Layout, Davanagere, Karnataka 577004 or reach out via phone, WhatsApp, or email for personalized assistance.';
+$meta_keywords = 'contact Adishakti furnitures, furniture showroom Ring Road Davanagere, SS Layout furniture store, wooden furniture enquiry Karnataka';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -253,7 +253,8 @@ $meta_keywords = 'contact Adishakti furnitures, furniture showroom Davanagere, f
                         <div class="location-details">
                             <div class="address-block">
                                 <h4>Adishakti Furnitures</h4>
-                                <p>Ring Road, beside Navodaya Vidya Samsthe<br>
+                                <p>Adishakthi Furnitures<br>
+                                Ring Rd, beside Navodaya Vidya Samsthe<br>
                                 SS Layout, Davanagere<br>
                                 Karnataka 577004</p>
                             </div>
