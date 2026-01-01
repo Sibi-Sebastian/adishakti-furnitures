@@ -149,7 +149,7 @@ function getProductsData() {
             'id' => 15,
             'name' => 'PILLOWS',
             'category' => 'Mattresses',
-            'image' => 'assets/images/pillows.webp',
+            'image' => 'assets/images/pillow.webp',
             'description' => 'Comfortable pillows for perfect sleep',
             'dimensions' => 'L 70cm x W 45cm x H 15cm',
             'material' => 'Memory Foam & Cotton Cover'

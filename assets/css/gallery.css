@@ -357,7 +357,6 @@
 
 .lightbox-info {
   padding: 40px;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   background: linear-gradient(135deg, var(--neutral-white) 0%, var(--secondary-cream) 100%);
