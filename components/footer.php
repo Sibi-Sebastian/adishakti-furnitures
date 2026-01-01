@@ -120,7 +120,7 @@
         <div class="footer-bottom">
             <div class="footer-bottom-content">
                 <div class="footer-copyright">
-                    <p>© 2025 Adishakti Furnitures. All rights reserved.</p>
+                    <p>© <?php echo date('Y'); ?> Adishakti Furnitures. All rights reserved.</p>
                 </div>
                 <div class="footer-credit">
                     <p>Designed by <a href="https://tackled.co.in" target="_blank" rel="noopener noreferrer">Tackle-D</a></p>

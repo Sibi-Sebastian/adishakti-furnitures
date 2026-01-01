@@ -137,22 +137,22 @@ $meta_keywords = 'contact Adishakti furnitures, furniture showroom Davanagere, f
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="firstName">First Name *</label>
-                                    <input type="text" id="firstName" name="firstName" required>
+                                    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="lastName">Last Name *</label>
-                                    <input type="text" id="lastName" name="lastName" required>
+                                    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
                                 </div>
                             </div>
                             
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="email">Email Address *</label>
-                                    <input type="email" id="email" name="email" required>
+                                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="phone">Phone Number *</label>
-                                    <input type="tel" id="phone" name="phone" required>
+                                    <input type="tel" id="phone" name="phone" placeholder="+91 99999 99999" required>
                                 </div>
                             </div>
 
@@ -170,7 +170,7 @@ $meta_keywords = 'contact Adishakti furnitures, furniture showroom Davanagere, f
 
                             <div class="form-group">
                                 <label for="message">Message *</label>
-                                <textarea id="message" name="message" rows="5" placeholder="Tell us about your furniture requirements..." required></textarea>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell us about your furniture requirements, preferred style, budget range, or any specific questions you have. We're here to help you find the perfect furniture for your home!" required></textarea>
                             </div>
 
                             <div class="form-note">

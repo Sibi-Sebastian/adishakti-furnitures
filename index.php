@@ -58,10 +58,9 @@ $meta_keywords = 'furniture, wooden furniture, home furniture, sofas, beds, dini
             <?php include 'sections/modular.php'; ?>
             <?php include 'sections/indias-finest-brand.php'; ?>
             <?php include 'sections/latest-collections.php'; ?>
+            <?php include 'components/testimonials.php'; ?>
         </div>
 
-        <!-- Testimonials Section -->
-        <?php include 'components/testimonials.php'; ?>
     </main>
     
     <!-- Footer -->
