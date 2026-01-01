@@ -24,15 +24,15 @@
                 $rooms = [
                     'Living Room' => [
                         'category' => 'Living Room',
-                        'image' => 'assets/images/carousal-image-living-room.webp'
+                        'image' => 'assets/images/new-sofa.webp'
                     ],
                     'Dining Room' => [
                         'category' => 'Dining',
-                        'image' => 'assets/images/carousal-image-dining-room.webp'
+                        'image' => 'assets/images/new-dining.webp'
                     ],
                     'Bedroom' => [
                         'category' => 'Bedroom',
-                        'image' => 'assets/images/carousal-image-bedroom.webp'
+                        'image' => 'assets/images/new-bed.webp'
                     ]
                 ];
                 foreach ($rooms as $room_name => $room_data): 

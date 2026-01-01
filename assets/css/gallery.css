@@ -136,15 +136,18 @@
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease;
-  border: 1px solid rgba(226, 232, 240, 0.6);
+  border: 2px solid var(--primary-gold);
   cursor: pointer;
   position: relative;
+  background: linear-gradient(135deg, #FFFFFF 0%, #FEFEFE 100%);
 }
 
 .product-card:hover {
   transform: translateY(-12px);
   box-shadow: 0 20px 60px rgba(224, 122, 95, 0.25);
   border-color: var(--accent-coral);
+  border-width: 3px;
+  background: linear-gradient(135deg, #FFFFFF 0%, var(--secondary-cream) 100%);
 }
 
 .product-image {
@@ -1005,6 +1008,12 @@
 
   .product-card {
     border-radius: 12px;
+    border-width: 2px;
+  }
+  
+  .product-card:hover {
+    border-width: 2px;
+    transform: translateY(-6px);
   }
 
   .product-image {

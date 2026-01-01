@@ -1,23 +1,3 @@
-/* Skip Navigation Link - Accessibility */
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 6px;
-  background: var(--neutral-dark);
-  color: var(--neutral-white);
-  padding: 8px 16px;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: 600;
-  font-size: 14px;
-  z-index: 9999;
-  transition: top 0.3s ease;
-}
-
-.skip-link:focus {
-  top: 6px;
-}
-
 /* Screen Reader Only Text */
 .sr-only {
   position: absolute;
@@ -43,18 +23,24 @@
   --primary-blue: #3B82F6;
   --primary-indigo: #6366F1;
   --primary-emerald: #10B981;
+  --primary-gold: #D4AF37;
   
   /* Secondary Colors - Soft & Elegant */
   --secondary-pearl: #F8FAFC;
   --secondary-cloud: #F1F5F9;
   --secondary-mist: #E2E8F0;
   --secondary-silver: #CBD5E1;
+  --secondary-cream: #FEF7ED;
+  --secondary-brown: #8B4513;
+  --secondary-olive: #6B7280;
   
   /* Accent Colors - Fresh Touches */
   --accent-sky: #0EA5E9;
   --accent-violet: #8B5CF6;
   --accent-rose: #F43F5E;
   --accent-amber: #F59E0B;
+  --accent-coral: #E07A5F;
+  --accent-burgundy: #A63446;
   
   /* Neutral Colors - Clean & Modern */
   --neutral-dark: #1E293B;

@@ -843,6 +843,29 @@
   border: 1px solid var(--accent-burgundy);
 }
 
+/* Field-level validation errors */
+.field-error {
+  color: var(--accent-burgundy);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+/* Invalid input styling */
+.form-group input.invalid,
+.form-group select.invalid,
+.form-group textarea.invalid {
+  border-color: var(--accent-burgundy);
+  box-shadow: 0 0 0 2px rgba(166, 52, 70, 0.1);
+}
+
+.form-group input.invalid:focus,
+.form-group select.invalid:focus,
+.form-group textarea.invalid:focus {
+  border-color: var(--accent-burgundy);
+  box-shadow: 0 0 0 3px rgba(166, 52, 70, 0.2);
+}
+
 /* Loading State */
 .form-submit.loading {
   opacity: 0.7;

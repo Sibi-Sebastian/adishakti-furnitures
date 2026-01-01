@@ -154,7 +154,7 @@
             <!-- Mobile Contact Actions -->
             <div class="mobile-actions">
                 <h3>Contact Us</h3>
-                <a href="https://wa.me/919986642973?text=Hi, I'm interested in your furniture" 
+                <a href="https://wa.me/919986642973?text=Hi, I would like to inquire about your furniture offerings." 
                    target="_blank" 
                    rel="noopener noreferrer"
                    class="mobile-action-link whatsapp" 

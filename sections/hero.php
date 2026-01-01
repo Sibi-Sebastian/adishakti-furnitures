@@ -41,7 +41,7 @@
                     Call Us
                 </a>
                 <a 
-                    href="https://wa.me/919986642973?text=Hi, I'm interested in your furniture" 
+                    href="https://wa.me/919986642973?text=Hi,  I would like to inquire about your furniture offerings." 
                     target="_blank" 
                     rel="noopener noreferrer"
                     class="hero-cta-whatsapp"
