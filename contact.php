@@ -17,7 +17,7 @@ $meta_keywords = 'contact Adishakti furnitures, furniture showroom Davanagere, f
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="<?= $title ?>">
     <meta property="og:description" content="<?= $meta_description ?>">
-    <meta property="og:image" content="https://ii1.pepperfry.com/media/catalog/product/c/a/1600x1760/canedo-velvet-chaise-lounger-in-beige-colour-by-casacraft-canedo-velvet-chaise-lounger-in-beige-colo-zqhuzh.jpg">
+    <meta property="og:image" content="assets/images/carousal-image-living-room.webp">
     <meta property="og:type" content="website">
     
     <!-- Twitter Card Meta Tags -->

@@ -17,7 +17,7 @@ $meta_keywords = 'about Adishakti furnitures, wooden furniture company, handcraf
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="<?= $title ?>">
     <meta property="og:description" content="<?= $meta_description ?>">
-    <meta property="og:image" content="https://ii1.pepperfry.com/media/catalog/product/c/a/1600x1760/canedo-velvet-chaise-lounger-in-beige-colour-by-casacraft-canedo-velvet-chaise-lounger-in-beige-colo-zqhuzh.jpg">
+    <meta property="og:image" content="assets/images/carousal-image-living-room.webp">
     <meta property="og:type" content="website">
     
     <!-- Twitter Card Meta Tags -->
@@ -65,7 +65,7 @@ $meta_keywords = 'about Adishakti furnitures, wooden furniture company, handcraf
             <div class="container">
                 <div class="story-grid">
                     <div class="story-image">
-                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz0Ah82ZxfQiuoFON9gBl49tkJCSzSDZ4DodEG5pgX7vXFb7bMuRuBBB5oz-s1uoHGQHtHZnLJqgv2yQwTQqpHcUcA7jNKt0KPkqlOGLvu7zbj8Kn4AhQWNgcItTM_ke7-JdJWp=s1360-w1360-h1020-rw" alt="Adishakti Furnitures Craftsmanship" loading="lazy">
+                        <img src="assets/images/out-story.webp" alt="Adishakti Furnitures Craftsmanship" loading="lazy">
                     </div>
                     <div class="story-content">
                         <h2 class="section-title">Our Story</h2>
@@ -143,7 +143,7 @@ $meta_keywords = 'about Adishakti furnitures, wooden furniture company, handcraf
             <div class="container">
                 <div class="why-choose-grid">
                     <div class="why-choose-image">
-                        <img src="https://ii1.pepperfry.com/media/catalog/product/w/h/1100x1210/white-abstract-220-tc-microfiber-king-size-fitted-bedsheet-with-2-pillow-covers-white-abstract-220-t-8rkzv4.jpg" alt="Quality Furniture" loading="lazy">
+                        <img src="assets/images/about-why-choose.webp" alt="Quality Furniture" loading="lazy">
                     </div>
                     <div class="why-choose-content">
                         <h2 class="section-title">Why Choose Adishakti Furnitures?</h2>
