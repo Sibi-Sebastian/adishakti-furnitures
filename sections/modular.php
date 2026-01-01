@@ -19,11 +19,9 @@
                 <img src="assets/images/premium-dining.webp" alt="Bedroom Collection" loading="lazy">
 
                 <div class="modular-banner-content">
-                    <div class="modular-banner-content">
                     <h3 class="modular-title">Bedroom Collection</h3>
                     <p class="modular-description">Wardrobes with mirror finish, storage beds with hydraulic mechanism</p>
                     <a href="gallery.php" class="modular-cta">View Collection</a>
-                </div>
                 </div>
             </a>
         </div>

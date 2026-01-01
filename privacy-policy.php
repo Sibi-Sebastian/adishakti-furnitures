@@ -130,11 +130,14 @@
     </style>
 </head>
 <body>
+    <!-- Skip Navigation Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Navigation -->
     <?php include 'components/navbar.php'; ?>
     
     <!-- Main Content -->
-    <main>
+    <main id="main-content">
         <div class="legal-container">
             <a href="index.php" class="back-link">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">

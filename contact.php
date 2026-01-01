@@ -38,11 +38,14 @@ $meta_keywords = 'contact Adishakti furnitures, furniture showroom Davanagere, f
     <link rel="stylesheet" href="assets/css/contact.css">
 </head>
 <body>
+    <!-- Skip Navigation Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Navigation -->
     <?php include 'components/navbar.php'; ?>
     
     <!-- Main Content -->
-    <main>
+    <main id="main-content">
         <!-- Contact Hero Section -->
         <div class="contact-hero">
             <div class="container">
@@ -137,28 +140,32 @@ $meta_keywords = 'contact Adishakti furnitures, furniture showroom Davanagere, f
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="firstName">First Name *</label>
-                                    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                                    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required aria-describedby="firstName-help">
+                                    <span id="firstName-help" class="sr-only">Enter your first name as it should appear on correspondence</span>
                                 </div>
                                 <div class="form-group">
                                     <label for="lastName">Last Name *</label>
-                                    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                                    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required aria-describedby="lastName-help">
+                                    <span id="lastName-help" class="sr-only">Enter your last name as it should appear on correspondence</span>
                                 </div>
                             </div>
                             
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="email">Email Address *</label>
-                                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required aria-describedby="email-help">
+                                    <span id="email-help" class="sr-only">We'll use this email to respond to your inquiry</span>
                                 </div>
                                 <div class="form-group">
                                     <label for="phone">Phone Number *</label>
-                                    <input type="tel" id="phone" name="phone" placeholder="+91 99999 99999" required>
+                                    <input type="tel" id="phone" name="phone" placeholder="+91 99999 99999" required aria-describedby="phone-help">
+                                    <span id="phone-help" class="sr-only">Include country code for international numbers</span>
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label for="subject">Subject *</label>
-                                <select id="subject" name="subject" required>
+                                <select id="subject" name="subject" required aria-describedby="subject-help">
                                     <option value="">Select a subject</option>
                                     <option value="product-inquiry">Product Inquiry</option>
                                     <option value="custom-order">Custom Order</option>
@@ -166,11 +173,13 @@ $meta_keywords = 'contact Adishakti furnitures, furniture showroom Davanagere, f
                                     <option value="after-sales">After Sales Support</option>
                                     <option value="other">Other</option>
                                 </select>
+                                <span id="subject-help" class="sr-only">Choose the category that best describes your inquiry</span>
                             </div>
 
                             <div class="form-group">
                                 <label for="message">Message *</label>
-                                <textarea id="message" name="message" rows="5" placeholder="Tell us about your furniture requirements, preferred style, budget range, or any specific questions you have. We're here to help you find the perfect furniture for your home!" required></textarea>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell us about your furniture requirements, preferred style, budget range, or any specific questions you have. We're here to help you find the perfect furniture for your home!" required aria-describedby="message-help"></textarea>
+                                <span id="message-help" class="sr-only">Provide details about your furniture needs, budget, and any specific requirements</span>
                             </div>
 
                             <div class="form-note">

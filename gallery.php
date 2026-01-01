@@ -63,11 +63,14 @@ if ($selected_category !== 'All') {
     <link rel="stylesheet" href="assets/css/gallery.css">
 </head>
 <body>
+    <!-- Skip Navigation Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Navigation -->
     <?php include 'components/navbar.php'; ?>
     
     <!-- Main Content -->
-    <main>
+    <main id="main-content">
         <!-- Collections Header Section -->
         <div class="gallery-header">
             <div class="container">

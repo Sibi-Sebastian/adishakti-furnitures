@@ -38,11 +38,14 @@ $meta_keywords = 'about Adishakti furnitures, wooden furniture company, handcraf
     <link rel="stylesheet" href="assets/css/about.css">
 </head>
 <body>
+    <!-- Skip Navigation Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Navigation -->
     <?php include 'components/navbar.php'; ?>
     
     <!-- Main Content -->
-    <main>
+    <main id="main-content">
         <!-- About Hero Section -->
         <div class="about-hero">
             <div class="container">

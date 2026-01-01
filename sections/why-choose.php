@@ -20,7 +20,7 @@
                                 </svg>
                             </div>
                             <div class="benefit-text">
-                                <h4>Durability that lasts generations</h4>
+                                <h3>Durability that lasts generations</h3>
                                 <p>High-quality wooden furniture can last for decades with proper care, making it a smart long-term investment for your home.</p>
                             </div>
                         </div>
@@ -33,7 +33,7 @@
                                 </svg>
                             </div>
                             <div class="benefit-text">
-                                <h4>Natural beauty & warmth</h4>
+                                <h3>Natural beauty & warmth</h3>
                                 <p>Wood brings natural warmth and character to any space, creating a cozy and inviting atmosphere that synthetic materials can't match.</p>
                             </div>
                         </div>
@@ -45,7 +45,7 @@
                                 </svg>
                             </div>
                             <div class="benefit-text">
-                                <h4>Increases home value</h4>
+                                <h3>Increases home value</h3>
                                 <p>Quality wooden furniture adds significant value to your property and creates a sophisticated, premium look that buyers appreciate.</p>
                             </div>
                         </div>
@@ -58,7 +58,7 @@
                                 </svg>
                             </div>
                             <div class="benefit-text">
-                                <h4>Eco-friendly choice</h4>
+                                <h3>Eco-friendly choice</h3>
                                 <p>Sustainably sourced wooden furniture is environmentally responsible and biodegradable, reducing your carbon footprint.</p>
                             </div>
                         </div>

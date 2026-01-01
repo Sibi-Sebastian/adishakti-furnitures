@@ -47,11 +47,14 @@ $meta_keywords = 'furniture, wooden furniture, home furniture, sofas, beds, dini
     <link rel="stylesheet" href="assets/css/components.css">
 </head>
 <body>
+    <!-- Skip Navigation Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Navigation -->
     <?php include 'components/navbar.php'; ?>
     
     <!-- Main Content -->
-    <main>
+    <main id="main-content">
         <div class="hero">
             <?php include 'sections/hero.php'; ?>
             <?php include 'sections/why-choose.php'; ?>
