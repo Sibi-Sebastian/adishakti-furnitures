@@ -47,15 +47,6 @@ I'd like to discuss my furniture requirements. Please get back to me at your ear
         
         const whatsappUrl = `https://wa.me/919986642973?text=${encodeURIComponent(whatsappMessage)}`;
         
-        // Show success message
-        const successMessage = document.createElement('div');
-        successMessage.className = 'form-message success';
-        successMessage.innerHTML = `
-            <strong>Message sent successfully!</strong><br>
-            We'll redirect you to WhatsApp to complete your inquiry.
-        `;
-        form.insertBefore(successMessage, form.firstChild);
-        
         // Reset form
         form.reset();
         
@@ -166,21 +157,21 @@ function handleFormSubmitWithValidation(e) {
         'other': 'Other'
     };
     
-    const whatsappMessage = `🏠 *ADISHAKTI FURNITURES - Website Inquiry*
+    const whatsappMessage = `ADISHAKTI FURNITURES - Website Inquiry
 
-👤 *Customer Name:* ${firstName} ${lastName}
-📧 *Email Address:* ${email}
-📱 *Phone Number:* ${phone}
-📋 *Inquiry Type:* ${subjectLabels[subject] || subject}
+Customer Name: ${firstName} ${lastName}
+Email Address: ${email}
+Phone Number: ${phone}
+Inquiry Type: ${subjectLabels[subject] || subject}
 
-💬 *Customer Message:*
+Customer Message:
 "${message}"
 
----
-*Customer Request:* Please contact me to discuss my furniture requirements at your earliest convenience.
 
-*Inquiry Source:* Website Contact Form
-*Date:* ${new Date().toLocaleDateString('en-IN')} at ${new Date().toLocaleTimeString('en-IN')}`;
+Customer Request: Please contact me to discuss my furniture requirements at your earliest convenience.
+
+Inquiry Source: Website Contact Form
+Date: ${new Date().toLocaleDateString('en-IN')} at ${new Date().toLocaleTimeString('en-IN')}`;
     
     const whatsappUrl = `https://wa.me/919986642973?text=${encodeURIComponent(whatsappMessage)}`;
     
@@ -190,7 +181,7 @@ function handleFormSubmitWithValidation(e) {
         const successMessage = document.createElement('div');
         successMessage.className = 'form-message success';
         successMessage.innerHTML = `
-            <strong>✅ Message prepared successfully!</strong><br>
+            <strong>Message prepared successfully!</strong><br>
             Your inquiry details have been formatted and will be sent via WhatsApp.<br>
             <small>If WhatsApp doesn't open automatically, you can call us at +91 99866 42973</small>
         `;

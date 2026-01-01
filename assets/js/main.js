@@ -345,7 +345,7 @@ function hideLoading(element) {
 // Error handling for images
 document.addEventListener('error', function(e) {
     if (e.target.tagName === 'IMG') {
-        e.target.src = 'assets/images/logo.png'; // Fallback to logo
+        e.target.src = 'assets/images/india-dining-room.webp'; // Fallback to logo
         e.target.alt = 'Image not available';
     }
 }, true);

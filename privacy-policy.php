@@ -18,7 +18,7 @@
     <meta property="og:type" content="website">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="icon" type="image/png" href="assets/images/logo2.png">
     
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/global.css">

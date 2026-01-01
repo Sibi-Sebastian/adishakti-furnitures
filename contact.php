@@ -27,7 +27,7 @@ $meta_keywords = 'contact Adishakti furnitures, furniture showroom Davanagere, f
     <link rel="canonical" href="<?= (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="icon" type="image/png" href="assets/images/logo2.png">
     
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/global.css">
