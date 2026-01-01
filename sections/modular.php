@@ -2,7 +2,7 @@
 <div class="modular-section">
     <div class="hero-container">
         <h2 class="section-title">Premium Collections, Living Room & More</h2>
-        <p class="section-subtitle">Custom-designed modular solutions crafted with precision engineering and premium materials</p>
+        <p class="section-subtitle">Custom-designed modular furniture that turns everyday moments into lasting memories, crafted with care and premium materials.</p>
         <div class="modular-grid">
             
             <div class="modular-banner modular-large">

@@ -2,7 +2,7 @@
 <div class="new-collection-section">
     <div class="hero-container">
         <h2 class="section-title">Our Latest Collections</h2>
-        <p class="section-subtitle">Custom-designed modular solutions crafted with precision engineering and premium materials</p>
+        <p class="section-subtitle">Thoughtfully designed modular furniture crafted with precision, premium materials, and a passion for beautiful living.</p>
         <div class="collection-grid">
             <a href="gallery.php" class="collection-card collection-large">
                 <img src="http://localhost/Tackle-D/December/adishakti-furnitures/assets/images/premium-dining.webp" alt="Astra Collection" loading="lazy">

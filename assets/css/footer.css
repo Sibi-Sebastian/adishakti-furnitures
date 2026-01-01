@@ -236,6 +236,14 @@
     text-align: center;
   }
   
+  .footer-logo {
+    justify-content: center;
+  }
+  
+  .footer-brand-description {
+    text-align: center;
+  }
+  
   .footer-social {
     justify-content: center;
   }

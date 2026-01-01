@@ -65,7 +65,7 @@ $meta_keywords = 'about Adishakti furnitures, wooden furniture company, handcraf
             <div class="container">
                 <div class="story-grid">
                     <div class="story-image">
-                        <img src="http://localhost/Tackle-D/December/adishakti-furnitures/assets/images/our-story.webp" alt="Adishakti Furnitures Craftsmanship" loading="lazy">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz0Ah82ZxfQiuoFON9gBl49tkJCSzSDZ4DodEG5pgX7vXFb7bMuRuBBB5oz-s1uoHGQHtHZnLJqgv2yQwTQqpHcUcA7jNKt0KPkqlOGLvu7zbj8Kn4AhQWNgcItTM_ke7-JdJWp=s1360-w1360-h1020-rw" alt="Adishakti Furnitures Craftsmanship" loading="lazy">
                     </div>
                     <div class="story-content">
                         <h2 class="section-title">Our Story</h2>

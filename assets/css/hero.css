@@ -2480,7 +2480,7 @@
 /* Enhanced Modular Section */
 .modular-description {
   font-size: 15px;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 1);
   margin: 16px 0 24px 0;
   line-height: 1.6;
 }

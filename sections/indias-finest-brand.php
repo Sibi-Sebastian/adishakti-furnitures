@@ -3,7 +3,7 @@
     <div class="finest-brand-header">
         <h2 class="finest-brand-title">We Are India's Finest Furniture Brand</h2>
         <p class="section-description">
-            Explore our <a href="gallery.php" class="highlight">Furniture</a> Collection showcasing our extensive range of wooden furniture units to give your home an elegant touch with premium craftsmanship. We offer a wide range of... <a href="gallery.php" class="more-link">More</a>
+            Explore our <a href="gallery.php" class="highlight">Furnitures</a> beautifully crafted wooden pieces designed to add timeless elegance and warmth to your home. Experience premium craftsmanship across a wide range of styles.
         </p>
     </div>
     

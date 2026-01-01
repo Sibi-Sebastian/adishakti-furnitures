@@ -575,7 +575,7 @@
 
 /* Trust Section */
 .trust-section {
-  padding: 80px 0;
+  padding: 0px 0;
   background: #FFFFFF;
 }
 
@@ -635,7 +635,7 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .trust-section {
-    padding: 60px 0;
+    padding: 0px 0;
   }
   
   .trust-grid {
@@ -664,7 +664,7 @@
 
 @media (max-width: 480px) {
   .trust-section {
-    padding: 40px 0;
+    padding: 0px 0;
   }
   
   .trust-card {

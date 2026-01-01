@@ -199,28 +199,80 @@ $meta_keywords = 'contact Adishakti furnitures, furniture showroom Davanagere, f
                 </p>
                 
                 <div class="map-container">
-                    <div class="map-wrapper">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3847.8234567890123!2d75.9234567890123!3d14.4567890123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDI3JzI0LjQiTiA3NcKwNTUnMjQuNCJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin&q=Ring+Rd,+beside+Navodaya+Vidya+Samsthe,+SS+Layout,+Davanagere,+Karnataka+577004"
-                            width="100%" 
-                            height="400" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade"
-                            title="Adishakti Furnitures Location">
-                        </iframe>
+                    <div class="professional-map">
+                        <div class="map-header">
+                            <div class="map-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 6v16l7-4 8 4 7-4V2l-7 4-8-4-7 4z"></path>
+                                    <polyline points="8,2 8,18"></polyline>
+                                    <polyline points="16,6 16,22"></polyline>
+                                </svg>
+                            </div>
+                            <h3 class="map-title">Interactive Map</h3>
+                        </div>
+                        <div class="map-container-wrapper">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3847.8234567890123!2d75.9234567890123!3d14.4567890123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDI3JzI0LjQiTiA3NcKwNTUnMjQuNCJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin&q=Ring+Rd,+beside+Navodaya+Vidya+Samsthe,+SS+Layout,+Davanagere,+Karnataka+577004"
+                                width="100%" 
+                                height="450" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Adishakti Furnitures Location">
+                            </iframe>
+                        </div>
+                        <div class="map-footer">
+                            <div class="map-note">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M12 6v6l4 2"></path>
+                                </svg>
+                                <span>Click and drag to explore • Zoom in for detailed view</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="map-info">
-                        <h3>Directions</h3>
-                        <p>Our showroom is conveniently located on Ring Road, beside Navodaya Vidya Samsthe in SS Layout, Davanagere. Look for our distinctive signage and ample parking space.</p>
-                        <a href="https://maps.google.com/?q=Ring+Rd,+beside+Navodaya+Vidya+Samsthe,+SS+Layout,+Davanagere,+Karnataka+577004" target="_blank" class="btn-tertiary">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                <circle cx="12" cy="10" r="3"></circle>
-                            </svg>
-                            Get Directions
-                        </a>
+                    <div class="location-info">
+                        <div class="location-header">
+                            <div class="location-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <h3 class="location-title">Visit Our Showroom</h3>
+                        </div>
+                        
+                        <div class="location-details">
+                            <div class="address-block">
+                                <h4>Adishakti Furnitures</h4>
+                                <p>Ring Road, beside Navodaya Vidya Samsthe<br>
+                                SS Layout, Davanagere<br>
+                                Karnataka 577004</p>
+                            </div>
+                            
+                            <div class="timing-block">
+                                <h4>Store Hours</h4>
+                                <p>Monday - Saturday: 9:00 AM - 8:00 PM<br>
+                                Sunday: 10:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="location-actions">
+                            <a href="https://maps.google.com/?q=Ring+Rd,+beside+Navodaya+Vidya+Samsthe,+SS+Layout,+Davanagere,+Karnataka+577004" target="_blank" class="directions-btn">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 11l3 3l8-8"></path>
+                                    <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9s4.03-9 9-9c1.51 0 2.93.37 4.18 1.03"></path>
+                                </svg>
+                                Get Directions
+                            </a>
+                            <a href="tel:+919986642973" class="call-btn">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                Call Store
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
