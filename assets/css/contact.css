@@ -75,7 +75,7 @@
 }
 
 /* Specific styling for contact section titles with underlines */
-.contact-details .section-title,
+.contact-page-details .section-title,
 .contact-form-container .section-title {
   color: var(--neutral-dark);
   margin-bottom: 12px; /* Reduced from 16px */
@@ -88,7 +88,7 @@
   font-weight: 700;
 }
 
-.contact-details .section-title::after,
+.contact-page-details .section-title::after,
 .contact-form-container .section-title::after {
   content: '';
   position: absolute;
@@ -119,6 +119,16 @@
   position: relative;
 }
 
+/* Ensure contact page styles don't conflict with footer */
+.contact-info-section .contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px; /* Reduced from 60px */
+  align-items: stretch; /* Make both divs same height */
+  position: relative;
+  z-index: 1;
+}
+
 .contact-info-section::before {
   content: '';
   position: absolute;
@@ -131,16 +141,7 @@
   z-index: 0;
 }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px; /* Reduced from 60px */
-  align-items: stretch; /* Make both divs same height */
-  position: relative;
-  z-index: 1;
-}
-
-.contact-details {
+.contact-page-details {
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.95) 100%);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -187,7 +188,7 @@
   border-radius: 24px 24px 0 0;
 }
 
-.contact-details::before {
+.contact-page-details::before {
   content: '';
   position: absolute;
   top: 0;

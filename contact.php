@@ -64,7 +64,7 @@ $meta_keywords = 'contact Adishakti furnitures, furniture showroom Davanagere, f
         <div class="contact-info-section">
             <div class="container">
                 <div class="contact-grid">
-                    <div class="contact-details">
+                    <div class="contact-page-details">
                         <h2 class="section-title">Contact Information</h2>
                         <p class="contact-description">
                             Visit our showroom or reach out to us through any of the following channels. Our team is ready to assist you with all your furniture needs.
@@ -298,7 +298,7 @@ $meta_keywords = 'contact Adishakti furnitures, furniture showroom Davanagere, f
 
     <!-- Back to Top Button -->
     <button id="backToTop" class="back-to-top" aria-label="Back to top">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
             <polyline points="18 15 12 9 6 15"></polyline>
         </svg>
     </button>

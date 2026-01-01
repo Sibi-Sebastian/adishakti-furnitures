@@ -31,7 +31,7 @@ $testimonials = [
             <!-- Header -->
             <div class="testimonials-header-new">
                 <h2 class="testimonials-title-new">Customer Reviews</h2>
-                <button class="google-review-btn-new" onclick="window.open('https://share.google/z4xDjWKxBO00gQOSP', '_blank')">
+                <button class="google-review-btn-new" onclick="window.open('https://www.google.com/search?sca_esv=53dabff5d49024f6&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E2D4mXTACoJJAIrjD9rn_izPo2YX6A2Vp20OLUBxBNRPluodhumsy7aH8x3gbNSPzuy5kwqssRQwvF9TPC-9waM49Og2JmwI04aSG_3KUlgJ9cx94w%3D%3D&q=Adishakthi+Furnitures+Reviews&sa=X&ved=2ahUKEwi76vLe5umRAxXEcGwGHSrUOXcQ0bkNegQIIhAE&biw=1536&bih=776&dpr=1.25&zx=1767252007319&no_sw_cr=1', '_blank')">
                     Review us on Google
                 </button>
             </div>

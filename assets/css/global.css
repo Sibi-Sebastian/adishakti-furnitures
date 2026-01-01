@@ -78,9 +78,9 @@ img {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  width: 56px;
-  height: 56px;
-  background: var(--gradient-warm);
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, #ff4444 0%, #cc0000 100%);
   color: white;
   border: none;
   border-radius: 50%;
@@ -88,26 +88,33 @@ img {
   display: none;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 16px rgba(255, 68, 68, 0.3);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 998;
 }
 
-/* Desktop-only positioning - ensure right bottom alignment within content */
+/* Desktop-only positioning - floating buttons above back-to-top */
 @media (min-width: 1025px) {
   .back-to-top {
     position: fixed;
-    bottom: 170px; /* Above floating buttons */
+    bottom: 30px; /* Bottom right position */
     right: max(30px, calc(50vw - 720px + 30px)); /* Stay within 1440px container or 30px from edge */
+    width: 44px;
+    height: 44px;
   }
   
   .back-to-top.show {
-    bottom: 170px; /* Above floating buttons */
+    bottom: 30px; /* Bottom right position */
     right: max(30px, calc(50vw - 720px + 30px)); /* Keep within content boundaries */
   }
   
+  .back-to-top svg {
+    width: 20px;
+    height: 20px;
+  }
+  
   .floating-actions {
-    bottom: 30px;
+    bottom: 98px; /* Above back-to-top button */
     right: max(30px, calc(50vw - 720px + 30px)); /* Align with content boundaries */
   }
 }
@@ -116,17 +123,24 @@ img {
 @media (min-width: 1025px) and (max-width: 1500px) {
   .back-to-top {
     right: 30px; /* Use viewport positioning on smaller screens */
-    bottom: 170px; /* Above floating buttons */
+    bottom: 30px; /* Bottom right position */
+    width: 44px;
+    height: 44px;
   }
   
   .back-to-top.show {
     right: 30px;
-    bottom: 170px; /* Above floating buttons */
+    bottom: 30px; /* Bottom right position */
+  }
+  
+  .back-to-top svg {
+    width: 20px;
+    height: 20px;
   }
   
   .floating-actions {
     right: 30px;
-    bottom: 30px;
+    bottom: 98px; /* Above back-to-top button */
   }
 }
 
@@ -149,12 +163,13 @@ img {
 
 .back-to-top:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(224, 122, 95, 0.4);
+  box-shadow: 0 8px 24px rgba(255, 68, 68, 0.5);
+  background: linear-gradient(135deg, #ff6666 0%, #ff0000 100%);
 }
 
 .back-to-top svg {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   transition: transform 0.3s ease;
 }
 
@@ -166,10 +181,10 @@ img {
   display: flex;
 }
 
-/* Floating Action Buttons - Mobile Only */
+/* Floating Action Buttons - Above Back-to-Top Button */
 .floating-actions {
   position: fixed;
-  bottom: 30px;
+  bottom: 98px; /* Above back-to-top button (30px + 44px + 24px gap) */
   right: 30px;
   display: none;
   flex-direction: column;
@@ -243,9 +258,9 @@ img {
   box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
 }
 
-/* Position back-to-top button in the same column - All devices */
+/* Position back-to-top button at bottom right - All devices */
 .back-to-top.show {
-  bottom: 160px; /* Above the two floating buttons (56px + 16px + 56px + 16px + some margin) */
+  bottom: 30px; /* Bottom right position */
   right: 30px;
 }
 
@@ -259,7 +274,7 @@ img {
 /* Tablet specific adjustments for floating buttons (768px to 1024px) */
 @media (max-width: 1024px) and (min-width: 768px) {
   .floating-actions {
-    bottom: 40px;
+    bottom: 120px; /* Above back-to-top button (40px + 44px + 36px gap) */
     right: 40px;
     gap: 20px;
   }
@@ -275,39 +290,46 @@ img {
   }
 
   .back-to-top {
-    width: 56px;
-    height: 56px;
-    bottom: 192px; /* Above the two floating buttons (40px + 56px + 20px + 56px + 20px) */
+    width: 44px;
+    height: 44px;
+    bottom: 40px; /* Bottom right position */
     right: 40px;
   }
 
   .back-to-top.show {
-    bottom: 192px;
+    bottom: 40px; /* Bottom right position */
     right: 40px;
   }
 
   .back-to-top svg {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
   }
 }
 
 /* Mobile range (481px to 767px) */
 @media (max-width: 767px) and (min-width: 481px) {
   .floating-actions {
-    bottom: 30px;
+    bottom: 98px; /* Above back-to-top button (30px + 44px + 24px gap) */
     right: 30px;
     gap: 16px;
   }
 
   .back-to-top {
-    bottom: 170px;
+    bottom: 30px; /* Bottom right position */
     right: 30px;
+    width: 44px;
+    height: 44px;
   }
 
   .back-to-top.show {
-    bottom: 170px;
+    bottom: 30px; /* Bottom right position */
     right: 30px;
+  }
+
+  .back-to-top svg {
+    width: 20px;
+    height: 20px;
   }
 }
 /* Mobile Responsiveness Improvements */
@@ -319,19 +341,19 @@ img {
   }
 
   .back-to-top {
-    bottom: 148px; /* Above the two floating buttons (20px + 50px + 12px + 50px + 16px) */
+    bottom: 20px; /* Bottom right position */
     right: 20px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
 
   .back-to-top svg {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
   }
 
   .floating-actions {
-    bottom: 20px;
+    bottom: 84px; /* Above back-to-top button (20px + 40px + 24px gap) */
     right: 20px;
     gap: 12px;
   }
