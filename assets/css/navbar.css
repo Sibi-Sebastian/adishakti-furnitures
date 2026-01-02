@@ -448,6 +448,28 @@
   }
 }
 
+/* Specific fix for 768px-820px range - Smaller logo to prevent Contact Us overflow */
+@media (max-width: 820px) and (min-width: 769px) {
+  .logo-image {
+    height: 55px; /* Reduced from 65px to 55px */
+  }
+  
+  .logo-text {
+    font-size: 22px; /* Reduced from 24px to 22px */
+  }
+}
+
+/* Extra fix for exactly 768px - Even smaller logo */
+@media (max-width: 768px) and (min-width: 768px) {
+  .logo-image {
+    height: 45px; /* Further reduced to 45px for 768px */
+  }
+  
+  .logo-text {
+    font-size: 18px; /* Further reduced to 18px for 768px */
+  }
+}
+
 /* Mobile - Show mobile menu for phones only */
 @media (max-width: 767px) {
   .navbar-container {

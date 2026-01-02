@@ -5,8 +5,12 @@
             <!-- Column 1: Brand & About -->
             <div class="footer-column footer-brand-column">
                 <div class="footer-logo">
-                    <img src="assets/images/logo2.png" alt="Adishakti Furnitures" class="footer-logo-img">
-                    <h3 class="footer-brand-name">Adishakti Furnitures</h3>
+                    <a href="index.php" class="footer-logo-link">
+                        <img src="assets/images/logo2.png" alt="Adishakti Furnitures" class="footer-logo-img">
+                    </a>
+                    <a href="index.php" class="footer-brand-link">
+                        <h3 class="footer-brand-name">Adishakti Furnitures</h3>
+                    </a>
                 </div>
                 <p class="footer-brand-description">
                     Crafting premium wooden furniture with passion and precision. Transform your space with our handcrafted collections designed for modern living.

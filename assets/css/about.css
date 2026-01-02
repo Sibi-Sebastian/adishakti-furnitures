@@ -71,6 +71,7 @@
   font-weight: 700;
   color: var(--neutral-dark);
   margin-bottom: 16px;
+  padding-top: 10px;
   letter-spacing: -0.5px;
 }
 
